@@ -1,0 +1,232 @@
+<!--
+  ============================================
+  RACK STORAGE SOLUTIONS - USED RACK INVENTORY LANDING PAGE
+  ============================================
+  Meta Title: Used Pallet Rack Inventory | Check Availability | Rack Storage Solutions
+  Meta Description: Browse available used pallet rack inventory. Quality inspected uprights, beams, and wire decking at 40-60% savings. Request availability from Rack Storage Solutions.
+
+  USAGE: PPC landing page for used rack searches
+-->
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.rackstoragesolutions.com/used-rack-inventory/#webpage",
+  "name": "Used Pallet Rack Inventory",
+  "description": "Check availability of used pallet rack components at 40-60% savings vs new.",
+  "isPartOf": {"@id": "https://www.rackstoragesolutions.com/#website"}
+}
+</script>
+
+<!-- ============================================
+     HERO SECTION
+     ============================================ -->
+<section class="section" style="padding: var(--space-8) 0;">
+  <div class="container">
+    <div class="grid grid--2" style="gap: var(--space-12); align-items: start;">
+      <!-- Left: Content -->
+      <div>
+        <p style="color: var(--primary-red); font-weight: 600; margin-bottom: var(--space-2);">SAVE 40-60% VS NEW</p>
+        <h1 style="font-size: var(--text-4xl);">Quality Used Pallet Rack</h1>
+        <p class="lead" style="margin-bottom: var(--space-6);">Inspected, graded, and ready to ship. Same structural capacity as new—just without the new price tag.</p>
+
+        <!-- What We Have -->
+        <div style="margin-top: var(--space-6);">
+          <h3 style="margin-bottom: var(--space-4);">Available Inventory</h3>
+
+          <div class="card" style="padding: var(--space-4); margin-bottom: var(--space-3);">
+            <h4 style="margin-bottom: var(--space-2);">Uprights / Frames</h4>
+            <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Various heights (8'-28') and depths (36", 42", 48"). Teardrop and keystone profiles.</p>
+          </div>
+
+          <div class="card" style="padding: var(--space-4); margin-bottom: var(--space-3);">
+            <h4 style="margin-bottom: var(--space-2);">Beams</h4>
+            <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Step beams and box beams. Common lengths: 96", 108", 120", 144". Multiple capacity ratings.</p>
+          </div>
+
+          <div class="card" style="padding: var(--space-4); margin-bottom: var(--space-3);">
+            <h4 style="margin-bottom: var(--space-2);">Wire Decking</h4>
+            <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Standard and heavy-duty wire deck. Various sizes to fit your beams.</p>
+          </div>
+
+          <div class="card" style="padding: var(--space-4);">
+            <h4 style="margin-bottom: var(--space-2);">Accessories</h4>
+            <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Pallet supports, row spacers, column protectors, and more.</p>
+          </div>
+        </div>
+
+        <!-- Why Used -->
+        <div style="margin-top: var(--space-8);">
+          <h3 style="margin-bottom: var(--space-4);">Why Buy Used?</h3>
+          <ul style="color: var(--medium-gray);">
+            <li style="margin-bottom: var(--space-2);"><strong>Same Capacity:</strong> Properly inspected used rack has the same load rating as new</li>
+            <li style="margin-bottom: var(--space-2);"><strong>Significant Savings:</strong> Put more dollars into pallet positions, less into materials</li>
+            <li style="margin-bottom: var(--space-2);"><strong>Faster Availability:</strong> No manufacturing lead time—inventory is ready now</li>
+            <li><strong>Sustainable Choice:</strong> Give quality steel a second life</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div>
+        <div class="card" style="padding: var(--space-6); border: 2px solid var(--primary-red);">
+          <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-2); text-align: center;">Check Availability</h2>
+          <p style="color: var(--medium-gray); font-size: var(--text-sm); text-align: center; margin-bottom: var(--space-4);">Tell us what you need and we'll check our inventory.</p>
+
+          <!-- FORM: quote_request (used rack variant) -->
+          <form id="used-rack-form" data-form-type="quote_request">
+            <div class="form-group">
+              <label for="first_name" class="form-label">First Name *</label>
+              <input type="text" id="first_name" name="first_name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="last_name" class="form-label">Last Name *</label>
+              <input type="text" id="last_name" name="last_name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email *</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone *</label>
+              <input type="tel" id="phone" name="phone" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company" class="form-label">Company Name</label>
+              <input type="text" id="company" name="company" class="form-input">
+            </div>
+
+            <!-- Pre-select used rack -->
+            <input type="hidden" name="service_interest" value="used_rack">
+
+            <div class="form-group">
+              <label for="project_details" class="form-label">What do you need?</label>
+              <textarea id="project_details" name="project_details" class="form-textarea" rows="4" placeholder="Describe what you're looking for:&#10;- Upright heights and depths&#10;- Beam lengths and quantity&#10;- Wire decking sizes&#10;- Approximate pallet positions needed"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline" class="form-label">When do you need it?</label>
+              <select id="timeline" name="timeline" class="form-select">
+                <option value="">Select timeline...</option>
+                <option value="asap">ASAP / Urgent</option>
+                <option value="1_month">Within 1 month</option>
+                <option value="1_3_months">1-3 months</option>
+                <option value="3_6_months">3-6 months</option>
+                <option value="planning">Just planning / researching</option>
+              </select>
+            </div>
+
+            <!-- Hidden Attribution Fields -->
+            <input type="hidden" name="utm_source" id="utm_source">
+            <input type="hidden" name="utm_medium" id="utm_medium">
+            <input type="hidden" name="utm_campaign" id="utm_campaign">
+            <input type="hidden" name="utm_content" id="utm_content">
+            <input type="hidden" name="utm_term" id="utm_term">
+            <input type="hidden" name="gclid" id="gclid">
+            <input type="hidden" name="fbclid" id="fbclid">
+            <input type="hidden" name="landing_page" id="landing_page">
+            <input type="hidden" name="first_referrer" id="first_referrer">
+            <input type="hidden" name="traffic_type" id="traffic_type">
+            <input type="hidden" name="conversion_page" id="conversion_page">
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%; margin-top: var(--space-4);">Check Availability</button>
+          </form>
+        </div>
+
+        <!-- Phone -->
+        <div style="text-align: center; margin-top: var(--space-4);">
+          <p style="color: var(--medium-gray); margin-bottom: var(--space-2);">Need it now? Call us:</p>
+          <a href="tel:+18337772257" style="font-size: var(--text-xl); font-weight: bold; color: var(--primary-red);">(833) 777-2257</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     QUALITY GUARANTEE
+     ============================================ -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="text-center" style="margin-bottom: var(--space-8);">Our Quality Standard</h2>
+
+    <div class="grid grid--4" style="gap: var(--space-6);">
+      <div style="text-align: center;">
+        <div style="width: 64px; height: 64px; background: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 32px; height: 32px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4 style="margin-bottom: var(--space-2);">Known Source</h4>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">We know where every piece comes from. No mystery inventory.</p>
+      </div>
+
+      <div style="text-align: center;">
+        <div style="width: 64px; height: 64px; background: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 32px; height: 32px;"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h4 style="margin-bottom: var(--space-2);">Inspected</h4>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Every piece visually and structurally inspected before sale.</p>
+      </div>
+
+      <div style="text-align: center;">
+        <div style="width: 64px; height: 64px; background: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 32px; height: 32px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h4 style="margin-bottom: var(--space-2);">Graded</h4>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Clear A/B/C grading so you know exactly what you're getting.</p>
+      </div>
+
+      <div style="text-align: center;">
+        <div style="width: 64px; height: 64px; background: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="width: 32px; height: 32px;"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h4 style="margin-bottom: var(--space-2);">Delivered</h4>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Nationwide shipping. We handle logistics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     GRADING EXPLANATION
+     ============================================ -->
+<section class="section">
+  <div class="container container--narrow">
+    <h2 class="text-center" style="margin-bottom: var(--space-8);">Understanding Our Grades</h2>
+
+    <div class="grid grid--3" style="gap: var(--space-6);">
+      <div class="card" style="padding: var(--space-5); border-top: 4px solid #28a745;">
+        <h3 style="color: #28a745; margin-bottom: var(--space-2);">Grade A</h3>
+        <p style="color: var(--medium-gray); font-size: var(--text-sm);">Like-new condition. Minimal cosmetic wear. Uniform color. May have been lightly used or is overstock.</p>
+      </div>
+
+      <div class="card" style="padding: var(--space-5); border-top: 4px solid #ffc107;">
+        <h3 style="color: #d39e00; margin-bottom: var(--space-2);">Grade B</h3>
+        <p style="color: var(--medium-gray); font-size: var(--text-sm);">Good condition. Normal cosmetic wear—minor scratches, paint chips. Structurally sound. Colors may vary.</p>
+      </div>
+
+      <div class="card" style="padding: var(--space-5); border-top: 4px solid #6c757d;">
+        <h3 style="color: #6c757d; margin-bottom: var(--space-2);">Grade C</h3>
+        <p style="color: var(--medium-gray); font-size: var(--text-sm);">Economy grade. Noticeable cosmetic wear, surface rust. Structurally acceptable. Maximum value.</p>
+      </div>
+    </div>
+
+    <p style="text-align: center; color: var(--medium-gray); margin-top: var(--space-6);">All grades maintain full structural capacity. Cosmetic differences only.</p>
+  </div>
+</section>
+
+<!-- ============================================
+     CTA
+     ============================================ -->
+<section class="cta-section">
+  <div class="container text-center">
+    <h2 class="cta-section__title">Inventory Changes Daily</h2>
+    <p class="cta-section__text">Tell us what you need and we'll check what's available right now.</p>
+    <a href="#quote-form" class="btn btn--primary btn--lg" onclick="document.getElementById('first_name').focus(); return false;">Check Availability Now</a>
+  </div>
+</section>

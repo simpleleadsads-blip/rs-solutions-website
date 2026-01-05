@@ -1,0 +1,90 @@
+<!--
+  ============================================
+  RACK STORAGE SOLUTIONS - THANK YOU PAGE (DOWNLOAD)
+  ============================================
+  Meta Title: Thank You for Downloading | Rack Storage Solutions
+  Meta Description: Thank you for downloading this resource from Rack Storage Solutions. Check your email for the download link.
+
+  CONVERSION PAGE: This page triggers download conversion tracking
+  NOINDEX: Yes - thank you pages should not be indexed
+-->
+
+<!-- Meta: noindex -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Thank You - Download",
+  "description": "Confirmation page for resource download submissions."
+}
+</script>
+
+<!-- Conversion Tracking - fires on page load -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Fire Google Ads conversion
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17500834233/tWZPCIWe7NwbELmThplB',
+      'value': 1.0,
+      'currency': 'USD'
+    });
+  }
+
+  // Fire RS Events conversion
+  if (typeof RSEvents !== 'undefined') {
+    RSEvents.trackDownloadSubmit();
+  }
+
+  // Set conversion page in attribution
+  if (typeof RSAttribution !== 'undefined') {
+    RSAttribution.setConversionPage('/thank-you/download');
+  }
+});
+</script>
+
+<!-- ============================================
+     THANK YOU CONTENT
+     ============================================ -->
+<section class="section" style="padding: var(--space-16) 0; min-height: 60vh; display: flex; align-items: center;">
+  <div class="container container--narrow text-center">
+    <!-- Success Icon -->
+    <div style="width: 80px; height: 80px; background: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" style="width: 40px; height: 40px;"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+
+    <h1>Your Download Is on Its Way!</h1>
+    <p class="lead" style="margin-bottom: var(--space-6);">Check your email for the download link. It should arrive within a few minutes.</p>
+
+    <!-- Check Spam Notice -->
+    <div class="card" style="padding: var(--space-5); margin-bottom: var(--space-8);">
+      <p style="margin: 0;"><strong>Don't see it?</strong> Check your spam or promotions folder. If it's not there after 10 minutes, <a href="/contact">contact us</a> and we'll send it manually.</p>
+    </div>
+
+    <!-- Related Resources -->
+    <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">You Might Also Find Helpful</h2>
+    <div class="grid grid--3" style="gap: var(--space-4); text-align: left;">
+      <a href="/resources/faq" class="card card--interactive" style="padding: var(--space-4); text-decoration: none;">
+        <h3 style="font-size: var(--text-base); margin-bottom: var(--space-2);">FAQ</h3>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Common questions about pallet racking answered.</p>
+      </a>
+      <a href="/resources/racking-types-comparison" class="card card--interactive" style="padding: var(--space-4); text-decoration: none;">
+        <h3 style="font-size: var(--text-base); margin-bottom: var(--space-2);">Racking Types Guide</h3>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Compare selective, drive-in, push-back, and more.</p>
+      </a>
+      <a href="/resources/new-vs-used-pallet-rack" class="card card--interactive" style="padding: var(--space-4); text-decoration: none;">
+        <h3 style="font-size: var(--text-base); margin-bottom: var(--space-2);">New vs. Used Rack</h3>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Learn when each option makes sense.</p>
+      </a>
+    </div>
+
+    <!-- CTA -->
+    <div style="margin-top: var(--space-8); padding: var(--space-5); background: var(--light-gray); border-radius: var(--radius-lg);">
+      <p style="margin-bottom: var(--space-3);"><strong>Ready to discuss your project?</strong></p>
+      <a href="/contact" class="btn btn--primary">Get a Free Quote</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.rackstoragesolutions.com/#organization",
+  "name": "Rack Storage Solutions",
+  "alternateName": "RS Solutions",
+  "url": "https://www.rackstoragesolutions.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png",
+    "width": 400,
+    "height": 100
+  },
+  "image": "https://www.rackstoragesolutions.com/images/og-default.jpg",
+  "description": "Rack Storage Solutions provides nationwide warehouse storage solutions including pallet racking, shelving systems, warehouse design, installation, and relocation services for businesses of all sizes.",
+  "telephone": "+1-833-777-2257",
+  "email": "{{EMAIL_ADDRESS}}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1687 Timocuan Way Unit 113",
+    "addressLocality": "Longwood",
+    "addressRegion": "FL",
+    "postalCode": "32750",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.8283,
+      "longitude": -98.5795
+    },
+    "geoRadius": "3000 mi"
+  },
+  "sameAs": [
+    "{{FACEBOOK_URL}}",
+    "{{LINKEDIN_URL}}",
+    "{{YOUTUBE_URL}}"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-833-777-2257",
+      "contactType": "sales",
+      "areaServed": "US",
+      "availableLanguage": ["English", "Spanish"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-833-777-2257",
+      "contactType": "customer service",
+      "areaServed": "US",
+      "availableLanguage": ["English", "Spanish"]
+    }
+  ],
+  "foundingDate": "{{FOUNDING_YEAR}}",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "minValue": 10,
+    "maxValue": 50
+  },
+  "slogan": "Your Partner in Warehouse Storage Solutions",
+  "knowsAbout": [
+    "Pallet Racking Systems",
+    "Warehouse Design",
+    "Warehouse Storage Solutions",
+    "Industrial Shelving",
+    "Warehouse Installation",
+    "Warehouse Relocation",
+    "Rack Safety Inspections",
+    "Building Permits for Racking"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Warehouse Storage Services",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Pallet Racking",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heavy Duty Pallet Racking"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Used Pallet Rack"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Design & Installation",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warehouse Design & Layout"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warehouse Installation"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

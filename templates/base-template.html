@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>{{PAGE_TITLE}} | Rack Storage Solutions</title>
+  <meta name="title" content="{{PAGE_TITLE}} | Rack Storage Solutions">
+  <meta name="description" content="{{META_DESCRIPTION}}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:title" content="{{PAGE_TITLE}} | Rack Storage Solutions">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:image" content="{{OG_IMAGE_URL}}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{CANONICAL_URL}}">
+  <meta property="twitter:title" content="{{PAGE_TITLE}} | Rack Storage Solutions">
+  <meta property="twitter:description" content="{{META_DESCRIPTION}}">
+  <meta property="twitter:image" content="{{OG_IMAGE_URL}}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHZ0XZW8L3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XHZ0XZW8L3');
+    gtag('config', 'AW-17500834233');
+  </script>
+
+  <!-- Brand CSS (will be injected via GHL) -->
+  <style>
+    /* Brand CSS is loaded here via GHL custom code injection */
+  </style>
+
+  <!-- Schema Markup (JSON-LD) -->
+  {{SCHEMA_MARKUP}}
+
+  <!-- Attribution Tracking Script (loads first) -->
+  <script>
+    // RS Solutions Attribution Tracking - Loaded in head for early capture
+    (function() {
+      // Immediate UTM capture before any redirects
+      var params = new URLSearchParams(window.location.search);
+      var utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
+      utmParams.forEach(function(param) {
+        var value = params.get(param);
+        if (value) {
+          document.cookie = 'rs_' + param + '=' + encodeURIComponent(value) + '; max-age=7776000; path=/; SameSite=Lax';
+        }
+      });
+      // Capture landing page and referrer
+      if (!document.cookie.includes('rs_landing_page=')) {
+        document.cookie = 'rs_landing_page=' + encodeURIComponent(window.location.pathname) + '; max-age=7776000; path=/; SameSite=Lax';
+      }
+      if (!document.cookie.includes('rs_first_referrer=') && document.referrer) {
+        document.cookie = 'rs_first_referrer=' + encodeURIComponent(document.referrer) + '; max-age=7776000; path=/; SameSite=Lax';
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Skip to Main Content (Accessibility) -->
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <!-- Logo -->
+        <a href="/" class="header__logo" aria-label="Rack Storage Solutions - Home">
+          <img src="https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png" alt="Rack Storage Solutions" width="200" height="50">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <a href="/" class="nav__link {{HOME_ACTIVE}}">Home</a>
+
+          <!-- Services Dropdown -->
+          <div class="nav__dropdown">
+            <a href="/services" class="nav__link {{SERVICES_ACTIVE}}">Services</a>
+            <div class="nav__dropdown-menu">
+              <a href="/services/heavy-duty-pallet-racking" class="nav__dropdown-link">Heavy Duty Pallet Racking</a>
+              <a href="/services/used-pallet-rack" class="nav__dropdown-link">Used Pallet Rack</a>
+              <a href="/services/warehouse-design-layout" class="nav__dropdown-link">Warehouse Design & Layout</a>
+              <a href="/services/shelving-systems" class="nav__dropdown-link">Shelving Systems</a>
+              <a href="/services/warehouse-installation-teardown" class="nav__dropdown-link">Installation & Teardown</a>
+              <a href="/services/warehouse-relocation" class="nav__dropdown-link">Warehouse Relocation</a>
+              <a href="/services/permitting-engineering" class="nav__dropdown-link">Permitting & Engineering</a>
+              <a href="/services/rack-safety-inspections" class="nav__dropdown-link">Rack Safety & Inspections</a>
+            </div>
+          </div>
+
+          <!-- Industries Dropdown -->
+          <div class="nav__dropdown">
+            <a href="/industries" class="nav__link {{INDUSTRIES_ACTIVE}}">Industries</a>
+            <div class="nav__dropdown-menu">
+              <a href="/industries/3pl-logistics" class="nav__dropdown-link">3PL & Logistics</a>
+              <a href="/industries/manufacturing" class="nav__dropdown-link">Manufacturing</a>
+              <a href="/industries/ecommerce" class="nav__dropdown-link">E-Commerce</a>
+              <a href="/industries/cold-storage" class="nav__dropdown-link">Cold Storage</a>
+              <a href="/industries/retail" class="nav__dropdown-link">Retail</a>
+            </div>
+          </div>
+
+          <a href="/about" class="nav__link {{ABOUT_ACTIVE}}">About</a>
+          <a href="/nationwide-service" class="nav__link {{NATIONWIDE_ACTIVE}}">Nationwide</a>
+          <a href="/resources/faq" class="nav__link {{FAQ_ACTIVE}}">FAQ</a>
+        </nav>
+
+        <!-- Header CTA -->
+        <div class="header__cta hidden lg:block">
+          <a href="/contact" class="btn btn--primary">Get a Quote</a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="nav-toggle" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="/" class="mobile-nav__link">Home</a>
+    <a href="/services" class="mobile-nav__link">Services</a>
+    <a href="/services/heavy-duty-pallet-racking" class="mobile-nav__link" style="padding-left: 1rem; font-size: 1rem;">- Pallet Racking</a>
+    <a href="/services/used-pallet-rack" class="mobile-nav__link" style="padding-left: 1rem; font-size: 1rem;">- Used Rack</a>
+    <a href="/services/warehouse-design-layout" class="mobile-nav__link" style="padding-left: 1rem; font-size: 1rem;">- Warehouse Design</a>
+    <a href="/services/shelving-systems" class="mobile-nav__link" style="padding-left: 1rem; font-size: 1rem;">- Shelving</a>
+    <a href="/services/warehouse-installation-teardown" class="mobile-nav__link" style="padding-left: 1rem; font-size: 1rem;">- Installation</a>
+    <a href="/services/warehouse-relocation" class="mobile-nav__link" style="padding-left: 1rem; font-size: 1rem;">- Relocation</a>
+    <a href="/services/permitting-engineering" class="mobile-nav__link" style="padding-left: 1rem; font-size: 1rem;">- Permitting</a>
+    <a href="/services/rack-safety-inspections" class="mobile-nav__link" style="padding-left: 1rem; font-size: 1rem;">- Safety Inspections</a>
+    <a href="/industries" class="mobile-nav__link">Industries</a>
+    <a href="/about" class="mobile-nav__link">About</a>
+    <a href="/nationwide-service" class="mobile-nav__link">Nationwide</a>
+    <a href="/resources/faq" class="mobile-nav__link">FAQ</a>
+    <a href="/contact" class="mobile-nav__link">Contact</a>
+    <div style="padding-top: 1.5rem;">
+      <a href="/contact" class="btn btn--primary btn--full">Get a Quote</a>
+    </div>
+    <div style="padding-top: 1rem;">
+      <a href="tel:+18337772257" class="btn btn--secondary btn--full">Call (833) 777-2257</a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main id="main-content" role="main">
+    {{PAGE_CONTENT}}
+  </main>
+
+  <!-- ============================================
+       CTA SECTION (Appears on most pages)
+       ============================================ -->
+  {{#SHOW_CTA}}
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2 class="cta-section__title">Ready to Optimize Your Warehouse?</h2>
+      <p class="cta-section__text">Get a free consultation and quote from our warehouse storage experts. We serve businesses nationwide.</p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="/contact" class="btn btn--primary btn--lg">Get Your Free Quote</a>
+        <a href="tel:+18337772257" class="btn btn--secondary btn--lg">Call (833) 777-2257</a>
+      </div>
+    </div>
+  </section>
+  {{/SHOW_CTA}}
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <img src="https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png" alt="Rack Storage Solutions" class="footer__logo" width="180" height="45">
+          <p class="footer__tagline">Your trusted partner for warehouse storage solutions. Serving businesses nationwide with quality pallet racking, design, installation, and relocation services.</p>
+        </div>
+
+        <!-- Services Column -->
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="/services/heavy-duty-pallet-racking" class="footer__link">Pallet Racking</a></li>
+            <li><a href="/services/used-pallet-rack" class="footer__link">Used Rack</a></li>
+            <li><a href="/services/warehouse-design-layout" class="footer__link">Warehouse Design</a></li>
+            <li><a href="/services/shelving-systems" class="footer__link">Shelving Systems</a></li>
+            <li><a href="/services/warehouse-installation-teardown" class="footer__link">Installation</a></li>
+            <li><a href="/services/warehouse-relocation" class="footer__link">Relocation</a></li>
+            <li><a href="/services/permitting-engineering" class="footer__link">Permitting</a></li>
+            <li><a href="/services/rack-safety-inspections" class="footer__link">Safety Inspections</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <ul class="footer__links">
+            <li><a href="/about" class="footer__link">About Us</a></li>
+            <li><a href="/nationwide-service" class="footer__link">Nationwide Service</a></li>
+            <li><a href="/industries" class="footer__link">Industries Served</a></li>
+            <li><a href="/resources/how-it-works" class="footer__link">How It Works</a></li>
+            <li><a href="/resources/faq" class="footer__link">FAQ</a></li>
+            <li><a href="/resources/glossary" class="footer__link">Glossary</a></li>
+            <li><a href="/contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a href="tel:+18337772257" style="color: inherit;">(833) 777-2257</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:{{EMAIL_ADDRESS}}" style="color: inherit;">{{EMAIL_ADDRESS}}</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span>Mon-Fri: 8am - 5pm CST</span>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="/contact" class="btn btn--primary btn--full">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; {{CURRENT_YEAR}} Rack Storage Solutions. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+
+  <!-- Mobile Navigation Toggle -->
+  <script>
+    (function() {
+      var toggle = document.querySelector('.nav-toggle');
+      var mobileNav = document.querySelector('.mobile-nav');
+      var body = document.body;
+
+      if (toggle && mobileNav) {
+        toggle.addEventListener('click', function() {
+          var isOpen = mobileNav.classList.toggle('mobile-nav--open');
+          toggle.setAttribute('aria-expanded', isOpen);
+          body.style.overflow = isOpen ? 'hidden' : '';
+        });
+      }
+    })();
+  </script>
+
+  <!-- FAQ Accordion (loads only if FAQ exists on page) -->
+  <script>
+    (function() {
+      var faqItems = document.querySelectorAll('.faq__item');
+      if (faqItems.length > 0) {
+        faqItems.forEach(function(item) {
+          var question = item.querySelector('.faq__question');
+          question.addEventListener('click', function() {
+            // Close other open items
+            faqItems.forEach(function(otherItem) {
+              if (otherItem !== item) {
+                otherItem.classList.remove('faq__item--open');
+              }
+            });
+            // Toggle current item
+            item.classList.toggle('faq__item--open');
+          });
+        });
+      }
+    })();
+  </script>
+
+  <!-- Attribution Tracking (Full Script) -->
+  <script src="/js/attribution.js"></script>
+
+  <!-- Event Tracking -->
+  <script src="/js/events.js"></script>
+
+  <!-- Google Analytics / GTM (placeholder) -->
+  <!-- {{ANALYTICS_CODE}} -->
+
+</body>
+</html>

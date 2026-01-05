@@ -1,0 +1,83 @@
+<!--
+  ============================================
+  RACK STORAGE SOLUTIONS - THANK YOU PAGE (CONTACT)
+  ============================================
+  Meta Title: Thank You for Contacting Us | Rack Storage Solutions
+  Meta Description: Thank you for contacting Rack Storage Solutions. We'll respond to your inquiry within one business day.
+
+  CONVERSION PAGE: This page triggers contact conversion tracking
+  NOINDEX: Yes - thank you pages should not be indexed
+-->
+
+<!-- Meta: noindex -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Thank You - Contact",
+  "description": "Confirmation page for contact form submissions."
+}
+</script>
+
+<!-- Conversion Tracking - fires on page load -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Fire Google Ads conversion
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17500834233/tWZPCIWe7NwbELmThplB',
+      'value': 1.0,
+      'currency': 'USD'
+    });
+  }
+
+  // Fire RS Events conversion
+  if (typeof RSEvents !== 'undefined') {
+    RSEvents.trackContactSubmit();
+  }
+
+  // Set conversion page in attribution
+  if (typeof RSAttribution !== 'undefined') {
+    RSAttribution.setConversionPage('/thank-you/contact');
+  }
+});
+</script>
+
+<!-- ============================================
+     THANK YOU CONTENT
+     ============================================ -->
+<section class="section" style="padding: var(--space-16) 0; min-height: 60vh; display: flex; align-items: center;">
+  <div class="container container--narrow text-center">
+    <!-- Success Icon -->
+    <div style="width: 80px; height: 80px; background: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" style="width: 40px; height: 40px;"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+
+    <h1>Thank You for Reaching Out!</h1>
+    <p class="lead" style="margin-bottom: var(--space-6);">We've received your message and will respond within <strong>1 business day</strong>.</p>
+
+    <!-- What to Expect -->
+    <div class="card" style="padding: var(--space-6); margin-bottom: var(--space-8);">
+      <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">What to Expect</h2>
+      <p style="color: var(--medium-gray);">A member of our team will review your message and get back to you via email or phone. If your inquiry is urgent, please call us directly.</p>
+    </div>
+
+    <!-- Need Immediate Help -->
+    <div style="padding: var(--space-5); background: var(--light-gray); border-radius: var(--radius-lg); margin-bottom: var(--space-8);">
+      <p style="margin-bottom: var(--space-2);"><strong>Need immediate assistance?</strong></p>
+      <p style="color: var(--medium-gray); margin-bottom: var(--space-3);">Our team is available during business hours:</p>
+      <a href="tel:+18337772257" class="btn btn--primary">Call (833) 777-2257</a>
+    </div>
+
+    <!-- Continue Browsing -->
+    <p style="color: var(--medium-gray);">In the meantime, explore our resources:</p>
+    <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-4);">
+      <a href="/services" class="btn btn--ghost">Our Services</a>
+      <a href="/resources/faq" class="btn btn--ghost">FAQ</a>
+      <a href="/industries" class="btn btn--ghost">Industries We Serve</a>
+    </div>
+  </div>
+</section>

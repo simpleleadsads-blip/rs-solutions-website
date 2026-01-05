@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.rackstoragesolutions.com/services/{{SERVICE_SLUG}}/#service",
+  "name": "{{SERVICE_NAME}}",
+  "description": "{{SERVICE_DESCRIPTION}}",
+  "url": "https://www.rackstoragesolutions.com/services/{{SERVICE_SLUG}}",
+  "provider": {
+    "@id": "https://www.rackstoragesolutions.com/#organization"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": "{{SERVICE_TYPE}}",
+  "category": "Warehouse Storage Solutions",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "{{SERVICE_NAME}} Options",
+    "itemListElement": [
+      {{SERVICE_OFFERINGS}}
+    ]
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "priceCurrency": "USD"
+    }
+  },
+  "termsOfService": "https://www.rackstoragesolutions.com/terms-of-service",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "{{REVIEW_COUNT}}",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}

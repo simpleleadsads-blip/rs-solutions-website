@@ -1,0 +1,489 @@
+{
+  "forms": {
+    "quote_request": {
+      "name": "Quote Request Form",
+      "description": "Primary lead capture form for quote requests",
+      "redirect_url": "/thank-you/quote",
+      "tags": ["quote_request", "lead"],
+      "pipeline": "New Leads",
+      "stage": "New Lead",
+      "visible_fields": [
+        {
+          "name": "first_name",
+          "label": "First Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.first_name"
+        },
+        {
+          "name": "last_name",
+          "label": "Last Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.last_name"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "ghl_field": "contact.email"
+        },
+        {
+          "name": "phone",
+          "label": "Phone",
+          "type": "tel",
+          "required": true,
+          "ghl_field": "contact.phone"
+        },
+        {
+          "name": "company",
+          "label": "Company Name",
+          "type": "text",
+          "required": false,
+          "ghl_field": "contact.company_name"
+        },
+        {
+          "name": "service_interest",
+          "label": "What do you need?",
+          "type": "select",
+          "required": true,
+          "ghl_field": "contact.service_interest",
+          "options": [
+            {"value": "", "label": "Select a service..."},
+            {"value": "pallet_racking", "label": "Pallet Racking (New)"},
+            {"value": "used_rack", "label": "Used Pallet Rack"},
+            {"value": "warehouse_design", "label": "Warehouse Design & Layout"},
+            {"value": "shelving", "label": "Shelving Systems"},
+            {"value": "installation", "label": "Installation / Teardown"},
+            {"value": "relocation", "label": "Warehouse Relocation"},
+            {"value": "permitting", "label": "Permitting & Engineering"},
+            {"value": "safety_inspection", "label": "Rack Safety Inspection"},
+            {"value": "other", "label": "Other / General Inquiry"}
+          ]
+        },
+        {
+          "name": "project_details",
+          "label": "Project Details",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "Tell us about your project: warehouse size, number of pallet positions needed, timeline, etc.",
+          "ghl_field": "contact.notes"
+        },
+        {
+          "name": "timeline",
+          "label": "Project Timeline",
+          "type": "select",
+          "required": false,
+          "ghl_field": "contact.timeline",
+          "options": [
+            {"value": "", "label": "Select timeline..."},
+            {"value": "asap", "label": "ASAP / Urgent"},
+            {"value": "1_month", "label": "Within 1 month"},
+            {"value": "1_3_months", "label": "1-3 months"},
+            {"value": "3_6_months", "label": "3-6 months"},
+            {"value": "planning", "label": "Just planning / researching"}
+          ]
+        }
+      ],
+      "hidden_fields": [
+        {"name": "utm_source", "ghl_field": "contact.utm_source"},
+        {"name": "utm_medium", "ghl_field": "contact.utm_medium"},
+        {"name": "utm_campaign", "ghl_field": "contact.utm_campaign"},
+        {"name": "utm_content", "ghl_field": "contact.utm_content"},
+        {"name": "utm_term", "ghl_field": "contact.utm_term"},
+        {"name": "gclid", "ghl_field": "contact.gclid"},
+        {"name": "fbclid", "ghl_field": "contact.fbclid"},
+        {"name": "landing_page", "ghl_field": "contact.landing_page"},
+        {"name": "first_referrer", "ghl_field": "contact.first_referrer"},
+        {"name": "traffic_type", "ghl_field": "contact.traffic_type"},
+        {"name": "conversion_page", "ghl_field": "contact.conversion_page"}
+      ]
+    },
+    "contact": {
+      "name": "Contact Form",
+      "description": "General contact form",
+      "redirect_url": "/thank-you/contact",
+      "tags": ["contact", "lead"],
+      "pipeline": "New Leads",
+      "stage": "New Lead",
+      "visible_fields": [
+        {
+          "name": "first_name",
+          "label": "First Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.first_name"
+        },
+        {
+          "name": "last_name",
+          "label": "Last Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.last_name"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "ghl_field": "contact.email"
+        },
+        {
+          "name": "phone",
+          "label": "Phone",
+          "type": "tel",
+          "required": true,
+          "ghl_field": "contact.phone"
+        },
+        {
+          "name": "company",
+          "label": "Company Name",
+          "type": "text",
+          "required": false,
+          "ghl_field": "contact.company_name"
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "How can we help you?",
+          "ghl_field": "contact.notes"
+        }
+      ],
+      "hidden_fields": [
+        {"name": "utm_source", "ghl_field": "contact.utm_source"},
+        {"name": "utm_medium", "ghl_field": "contact.utm_medium"},
+        {"name": "utm_campaign", "ghl_field": "contact.utm_campaign"},
+        {"name": "utm_content", "ghl_field": "contact.utm_content"},
+        {"name": "utm_term", "ghl_field": "contact.utm_term"},
+        {"name": "gclid", "ghl_field": "contact.gclid"},
+        {"name": "fbclid", "ghl_field": "contact.fbclid"},
+        {"name": "landing_page", "ghl_field": "contact.landing_page"},
+        {"name": "first_referrer", "ghl_field": "contact.first_referrer"},
+        {"name": "traffic_type", "ghl_field": "contact.traffic_type"},
+        {"name": "conversion_page", "ghl_field": "contact.conversion_page"}
+      ]
+    },
+    "spec_sheet_download": {
+      "name": "Spec Sheet Download Form",
+      "description": "Gated content form for downloading spec sheets",
+      "redirect_url": "/thank-you/download",
+      "tags": ["download", "spec_sheet", "lead"],
+      "pipeline": "New Leads",
+      "stage": "Downloaded Resource",
+      "visible_fields": [
+        {
+          "name": "first_name",
+          "label": "First Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.first_name"
+        },
+        {
+          "name": "last_name",
+          "label": "Last Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.last_name"
+        },
+        {
+          "name": "email",
+          "label": "Work Email",
+          "type": "email",
+          "required": true,
+          "ghl_field": "contact.email"
+        },
+        {
+          "name": "company",
+          "label": "Company Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.company_name"
+        }
+      ],
+      "hidden_fields": [
+        {"name": "resource_name", "ghl_field": "contact.downloaded_resource"},
+        {"name": "utm_source", "ghl_field": "contact.utm_source"},
+        {"name": "utm_medium", "ghl_field": "contact.utm_medium"},
+        {"name": "utm_campaign", "ghl_field": "contact.utm_campaign"},
+        {"name": "utm_content", "ghl_field": "contact.utm_content"},
+        {"name": "utm_term", "ghl_field": "contact.utm_term"},
+        {"name": "gclid", "ghl_field": "contact.gclid"},
+        {"name": "fbclid", "ghl_field": "contact.fbclid"},
+        {"name": "landing_page", "ghl_field": "contact.landing_page"},
+        {"name": "first_referrer", "ghl_field": "contact.first_referrer"},
+        {"name": "traffic_type", "ghl_field": "contact.traffic_type"},
+        {"name": "conversion_page", "ghl_field": "contact.conversion_page"}
+      ]
+    },
+    "consultation_booking": {
+      "name": "Consultation Booking Form",
+      "description": "Form for booking warehouse consultations",
+      "redirect_url": "/thank-you/consultation",
+      "tags": ["consultation", "appointment", "lead"],
+      "pipeline": "New Leads",
+      "stage": "Consultation Booked",
+      "visible_fields": [
+        {
+          "name": "first_name",
+          "label": "First Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.first_name"
+        },
+        {
+          "name": "last_name",
+          "label": "Last Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.last_name"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "ghl_field": "contact.email"
+        },
+        {
+          "name": "phone",
+          "label": "Phone",
+          "type": "tel",
+          "required": true,
+          "ghl_field": "contact.phone"
+        },
+        {
+          "name": "company",
+          "label": "Company Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.company_name"
+        },
+        {
+          "name": "consultation_type",
+          "label": "What would you like to discuss?",
+          "type": "select",
+          "required": true,
+          "ghl_field": "contact.consultation_type",
+          "options": [
+            {"value": "", "label": "Select topic..."},
+            {"value": "new_warehouse", "label": "New Warehouse Setup"},
+            {"value": "expansion", "label": "Warehouse Expansion"},
+            {"value": "optimization", "label": "Layout Optimization"},
+            {"value": "relocation", "label": "Facility Relocation"},
+            {"value": "other", "label": "Other"}
+          ]
+        },
+        {
+          "name": "preferred_time",
+          "label": "Preferred Contact Time",
+          "type": "select",
+          "required": false,
+          "ghl_field": "contact.preferred_time",
+          "options": [
+            {"value": "", "label": "Select time..."},
+            {"value": "morning", "label": "Morning (8am-12pm CST)"},
+            {"value": "afternoon", "label": "Afternoon (12pm-5pm CST)"}
+          ]
+        }
+      ],
+      "hidden_fields": [
+        {"name": "utm_source", "ghl_field": "contact.utm_source"},
+        {"name": "utm_medium", "ghl_field": "contact.utm_medium"},
+        {"name": "utm_campaign", "ghl_field": "contact.utm_campaign"},
+        {"name": "utm_content", "ghl_field": "contact.utm_content"},
+        {"name": "utm_term", "ghl_field": "contact.utm_term"},
+        {"name": "gclid", "ghl_field": "contact.gclid"},
+        {"name": "fbclid", "ghl_field": "contact.fbclid"},
+        {"name": "landing_page", "ghl_field": "contact.landing_page"},
+        {"name": "first_referrer", "ghl_field": "contact.first_referrer"},
+        {"name": "traffic_type", "ghl_field": "contact.traffic_type"},
+        {"name": "conversion_page", "ghl_field": "contact.conversion_page"}
+      ]
+    }
+  },
+  "ghl_custom_fields": {
+    "description": "Custom fields to create in GHL for attribution tracking",
+    "fields": [
+      {
+        "name": "utm_source",
+        "label": "UTM Source",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "utm_medium",
+        "label": "UTM Medium",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "utm_campaign",
+        "label": "UTM Campaign",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "utm_content",
+        "label": "UTM Content",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "utm_term",
+        "label": "UTM Term",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "gclid",
+        "label": "Google Click ID",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "fbclid",
+        "label": "Facebook Click ID",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "landing_page",
+        "label": "Landing Page",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "first_referrer",
+        "label": "First Referrer",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "traffic_type",
+        "label": "Traffic Type",
+        "type": "dropdown",
+        "group": "Attribution",
+        "options": [
+          "direct",
+          "organic_search",
+          "paid_search_google",
+          "paid_search_microsoft",
+          "paid_social_meta",
+          "organic_social",
+          "email",
+          "referral"
+        ]
+      },
+      {
+        "name": "conversion_page",
+        "label": "Conversion Page",
+        "type": "text",
+        "group": "Attribution"
+      },
+      {
+        "name": "service_interest",
+        "label": "Service Interest",
+        "type": "dropdown",
+        "group": "Sales",
+        "options": [
+          "pallet_racking",
+          "used_rack",
+          "warehouse_design",
+          "shelving",
+          "installation",
+          "relocation",
+          "permitting",
+          "safety_inspection",
+          "other"
+        ]
+      },
+      {
+        "name": "timeline",
+        "label": "Project Timeline",
+        "type": "dropdown",
+        "group": "Sales",
+        "options": [
+          "asap",
+          "1_month",
+          "1_3_months",
+          "3_6_months",
+          "planning"
+        ]
+      },
+      {
+        "name": "consultation_type",
+        "label": "Consultation Type",
+        "type": "dropdown",
+        "group": "Sales",
+        "options": [
+          "new_warehouse",
+          "expansion",
+          "optimization",
+          "relocation",
+          "other"
+        ]
+      },
+      {
+        "name": "downloaded_resource",
+        "label": "Downloaded Resource",
+        "type": "text",
+        "group": "Engagement"
+      },
+      {
+        "name": "preferred_time",
+        "label": "Preferred Contact Time",
+        "type": "dropdown",
+        "group": "Contact Preferences",
+        "options": [
+          "morning",
+          "afternoon"
+        ]
+      }
+    ]
+  },
+  "tag_taxonomy": {
+    "lead_source": [
+      "organic",
+      "paid_search",
+      "paid_social",
+      "referral",
+      "direct"
+    ],
+    "service_tags": [
+      "pallet_racking",
+      "used_rack",
+      "warehouse_design",
+      "shelving",
+      "installation",
+      "relocation",
+      "permitting",
+      "safety_inspection"
+    ],
+    "engagement_tags": [
+      "quote_request",
+      "contact",
+      "download",
+      "consultation",
+      "phone_call"
+    ],
+    "status_tags": [
+      "new_lead",
+      "contacted",
+      "qualified",
+      "quoted",
+      "won",
+      "lost"
+    ],
+    "industry_tags": [
+      "3pl",
+      "manufacturing",
+      "ecommerce",
+      "cold_storage",
+      "retail",
+      "other"
+    ]
+  }
+}

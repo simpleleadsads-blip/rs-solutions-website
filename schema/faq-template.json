@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{PAGE_URL}}/#faq",
+  "mainEntity": [
+    {{#FAQ_ITEMS}}
+    {
+      "@type": "Question",
+      "name": "{{QUESTION}}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ANSWER}}"
+      }
+    }{{#COMMA}},{{/COMMA}}
+    {{/FAQ_ITEMS}}
+  ]
+}
+
+<!--
+USAGE INSTRUCTIONS:
+==================
+Replace the template variables with actual content:
+
+{{PAGE_URL}} - Full URL of the page containing the FAQ
+{{#FAQ_ITEMS}} - Start of FAQ items loop
+{{QUESTION}} - The question text
+{{ANSWER}} - The answer text (can include HTML entities, escape quotes with \")
+{{#COMMA}} - Include comma if not last item
+{{/FAQ_ITEMS}} - End of FAQ items loop
+
+EXAMPLE OUTPUT:
+==============
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.rackstoragesolutions.com/services/heavy-duty-pallet-racking/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does pallet racking cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pallet racking costs typically range from $50-$200 per pallet position for new systems, depending on height, weight capacity, and configuration. Used rack can save 40-60% compared to new. Contact Rack Storage Solutions for a customized quote based on your specific needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does pallet rack installation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Installation timeline depends on project size. A typical 100-position system takes 1-2 days. Larger warehouse installations of 500+ positions may take 1-2 weeks. Rack Storage Solutions provides detailed timelines in every quote."
+      }
+    }
+  ]
+}
+-->

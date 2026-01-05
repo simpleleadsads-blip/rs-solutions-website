@@ -1,0 +1,97 @@
+<!--
+  ============================================
+  RACK STORAGE SOLUTIONS - THANK YOU PAGE (CONSULTATION)
+  ============================================
+  Meta Title: Consultation Scheduled | Rack Storage Solutions
+  Meta Description: Thank you for scheduling a consultation with Rack Storage Solutions. We look forward to speaking with you.
+
+  CONVERSION PAGE: This page triggers consultation conversion tracking
+  NOINDEX: Yes - thank you pages should not be indexed
+-->
+
+<!-- Meta: noindex -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Thank You - Consultation Scheduled",
+  "description": "Confirmation page for consultation booking submissions."
+}
+</script>
+
+<!-- Conversion Tracking - fires on page load -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Fire Google Ads conversion
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17500834233/tWZPCIWe7NwbELmThplB',
+      'value': 1.0,
+      'currency': 'USD'
+    });
+  }
+
+  // Fire RS Events conversion
+  if (typeof RSEvents !== 'undefined') {
+    RSEvents.trackCalendarBooked();
+  }
+
+  // Set conversion page in attribution
+  if (typeof RSAttribution !== 'undefined') {
+    RSAttribution.setConversionPage('/thank-you/consultation');
+  }
+});
+</script>
+
+<!-- ============================================
+     THANK YOU CONTENT
+     ============================================ -->
+<section class="section" style="padding: var(--space-16) 0; min-height: 60vh; display: flex; align-items: center;">
+  <div class="container container--narrow text-center">
+    <!-- Success Icon -->
+    <div style="width: 80px; height: 80px; background: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" style="width: 40px; height: 40px;"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+
+    <h1>Your Consultation Is Scheduled!</h1>
+    <p class="lead" style="margin-bottom: var(--space-6);">We'll reach out within <strong>1 business day</strong> to confirm your consultation time.</p>
+
+    <!-- What to Prepare -->
+    <div class="card" style="padding: var(--space-6); text-align: left; margin-bottom: var(--space-8);">
+      <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">How to Prepare</h2>
+      <p style="color: var(--medium-gray); margin-bottom: var(--space-4);">To make the most of our consultation, it helps to have the following ready:</p>
+
+      <ul style="color: var(--medium-gray);">
+        <li style="margin-bottom: var(--space-2);"><strong>Warehouse dimensions</strong> - Square footage, ceiling height, column spacing</li>
+        <li style="margin-bottom: var(--space-2);"><strong>Product information</strong> - What you're storing, typical pallet weights, pallet sizes</li>
+        <li style="margin-bottom: var(--space-2);"><strong>Current challenges</strong> - What's not working with your current setup (if applicable)</li>
+        <li style="margin-bottom: var(--space-2);"><strong>Goals</strong> - Pallet positions needed, workflow improvements, timeline</li>
+        <li><strong>Floor plan</strong> - If you have a CAD drawing or even a sketch, it helps</li>
+      </ul>
+
+      <p style="color: var(--medium-gray); margin-top: var(--space-4); font-size: var(--text-sm);"><em>Don't worry if you don't have everything—we'll work with what you have.</em></p>
+    </div>
+
+    <!-- Calendar Reminder -->
+    <div style="padding: var(--space-5); background: var(--light-gray); border-radius: var(--radius-lg); margin-bottom: var(--space-8);">
+      <p style="margin-bottom: var(--space-2);"><strong>Add to your calendar</strong></p>
+      <p style="color: var(--medium-gray); margin-bottom: var(--space-3);">Watch for our email with calendar invite details and call-in information.</p>
+    </div>
+
+    <!-- Need to Reschedule -->
+    <p style="color: var(--medium-gray);">Need to reschedule? No problem—just <a href="/contact">contact us</a> or reply to the confirmation email.</p>
+
+    <!-- Continue Browsing -->
+    <div style="margin-top: var(--space-8);">
+      <p style="color: var(--medium-gray); margin-bottom: var(--space-4);">While you wait, explore some helpful resources:</p>
+      <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
+        <a href="/resources/how-it-works" class="btn btn--ghost">How It Works</a>
+        <a href="/resources/racking-types-comparison" class="btn btn--ghost">Racking Types</a>
+        <a href="/industries" class="btn btn--ghost">Industries We Serve</a>
+      </div>
+    </div>
+  </div>
+</section>

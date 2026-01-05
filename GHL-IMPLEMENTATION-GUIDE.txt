@@ -1,0 +1,419 @@
+================================================================================
+RACK STORAGE SOLUTIONS - GO HIGH LEVEL IMPLEMENTATION GUIDE
+================================================================================
+
+This guide walks you through implementing the RS Solutions website in Go High Level.
+Follow these steps in order for the smoothest setup.
+
+
+================================================================================
+PART 1: INITIAL SETUP
+================================================================================
+
+1.1 CREATE YOUR GHL SITE
+------------------------
+1. Log into Go High Level
+2. Go to Sites > Websites (or Funnels if using funnel builder)
+3. Click "+ New Website"
+4. Choose "Blank" template (we have custom HTML)
+5. Name it "Rack Storage Solutions"
+6. Set your domain (see 1.2)
+
+
+1.2 CONNECT YOUR DOMAIN
+-----------------------
+Option A - Use GHL subdomain (for testing):
+   - Use the provided *.gohighlevel.com subdomain initially
+
+Option B - Connect custom domain:
+   1. Go to Settings > Domains
+   2. Click "Add Domain"
+   3. Enter: rackstoragesolutions.com (or your domain)
+   4. Add the DNS records shown to your domain registrar:
+      - A Record: Points to GHL IP
+      - CNAME: www points to GHL
+   5. Wait for DNS propagation (up to 48 hours)
+   6. Enable SSL certificate
+
+
+1.3 UPLOAD YOUR LOGO
+--------------------
+1. Go to Sites > Media Library
+2. Click "Upload"
+3. Upload: FINAL RS SOLUTIONS LOGO.png
+4. Copy the hosted URL (you'll need this for pages)
+5. Also upload any other images you want to use
+
+
+================================================================================
+PART 2: SET UP GLOBAL STYLES (CSS)
+================================================================================
+
+2.1 ADD CUSTOM CSS
+------------------
+1. In your website editor, go to Settings > Custom Code
+2. Or: Click the page settings gear > Custom CSS/JS
+3. Copy the ENTIRE contents of: css/styles.css
+4. Paste into the Custom CSS section
+5. Save
+
+NOTE: If GHL has a "Global CSS" option, use that so styles apply to all pages.
+Otherwise, you'll need to add CSS to each page's custom code section.
+
+
+2.2 ADD TRACKING CODE (OPTIONAL - DO LATER)
+-------------------------------------------
+If you have tracking IDs ready:
+1. Go to Settings > Custom Code > Head tracking code
+2. Add your Google Tag Manager or GA4 code
+3. For form tracking, this will be configured in Part 4
+
+
+================================================================================
+PART 3: CREATE PAGES
+================================================================================
+
+For each page, follow this process:
+
+3.1 CREATE A NEW PAGE
+---------------------
+1. In website builder, click "+ Add Page"
+2. Choose "Blank" template
+3. Name the page (e.g., "Home", "About", "Contact")
+4. Set the URL slug (e.g., "/", "/about", "/contact")
+
+
+3.2 ADD PAGE CONTENT
+--------------------
+Method A - Full Custom Code Block (Recommended):
+1. Add a "Custom Code" or "HTML" element to the page
+2. Copy the HTML from the corresponding file in /pages/
+3. Paste into the custom code block
+4. The CSS from Part 2 will style it automatically
+
+Method B - Use GHL Builder + Custom Sections:
+1. Build header/footer with GHL elements
+2. Use Custom Code blocks for complex sections
+3. More control but more work
+
+
+3.3 PAGE CREATION CHECKLIST
+---------------------------
+Create pages in this order:
+
+CORE PAGES:
+[ ] Home                    /                    (pages/core/home.html)
+[ ] About                   /about               (pages/core/about.html)
+[ ] Contact                 /contact             (pages/core/contact.html)
+[ ] Services Hub            /services            (pages/core/services-hub.html)
+[ ] Nationwide Service      /nationwide-service  (pages/core/nationwide-service.html)
+
+SERVICE PAGES:
+[ ] Pallet Racking          /services/heavy-duty-pallet-racking
+[ ] Used Rack               /services/used-pallet-rack
+[ ] Warehouse Design        /services/warehouse-design-layout
+[ ] Shelving Systems        /services/shelving-systems
+[ ] Installation            /services/warehouse-installation-teardown
+[ ] Relocation              /services/warehouse-relocation
+[ ] Permitting              /services/permitting-engineering
+[ ] Safety Inspections      /services/rack-safety-inspections
+
+INDUSTRY PAGES:
+[ ] Industries Hub          /industries          (pages/authority/industries-hub.html)
+[ ] 3PL & Logistics         /industries/3pl-logistics
+[ ] Manufacturing           /industries/manufacturing
+[ ] E-Commerce              /industries/ecommerce
+[ ] Cold Storage            /industries/cold-storage
+[ ] Retail                  /industries/retail
+
+RESOURCE/AUTHORITY PAGES:
+[ ] FAQ                     /resources/faq       (pages/authority/faq-hub.html)
+[ ] How It Works            /resources/how-it-works
+[ ] Glossary                /resources/glossary
+[ ] Safety & Compliance     /resources/safety-compliance
+[ ] New vs Used Rack        /resources/new-vs-used-pallet-rack
+[ ] Racking Types           /resources/racking-types-comparison
+[ ] When You Need Permits   /resources/when-you-need-permits
+
+LANDING PAGES (for PPC):
+[ ] Quote                   /quote               (pages/landing/quote.html)
+[ ] Used Rack Inventory     /used-rack-inventory
+[ ] Design Consultation     /warehouse-design-consultation
+[ ] Permitting Services     /permitting-services
+[ ] Relocation Quote        /warehouse-relocation-quote
+
+THANK YOU PAGES:
+[ ] Quote Thank You         /thank-you/quote     (pages/thank-you/quote.html)
+[ ] Contact Thank You       /thank-you/contact
+[ ] Download Thank You      /thank-you/download
+[ ] Consultation Thank You  /thank-you/consultation
+
+
+3.4 SET UP NAVIGATION
+---------------------
+1. Create a header element (or use GHL's header builder)
+2. Add your logo (use the URL from Media Library)
+3. Add navigation links:
+   - Services (dropdown with service pages)
+   - Industries (dropdown with industry pages)
+   - Resources (dropdown with resource pages)
+   - About
+   - Contact
+   - "Get a Quote" button -> /quote
+
+4. Create footer with:
+   - Company info
+   - Quick links
+   - Contact info: (833) 777-2257
+   - Address: 1687 Timocuan Way Unit 113, Longwood FL 32750
+
+
+================================================================================
+PART 4: SET UP FORMS
+================================================================================
+
+4.1 CREATE FORMS IN GHL
+-----------------------
+Go to Sites > Forms and create these forms:
+
+FORM 1: Quote Request Form
+- Name: RS Quote Request
+- Fields:
+  * First Name (required)
+  * Last Name (required)
+  * Email (required)
+  * Phone (required)
+  * Company Name
+  * Service Interest (dropdown): Pallet Racking, Used Rack, Design, etc.
+  * Project Details (textarea)
+  * Timeline (dropdown): ASAP, 1 month, 1-3 months, etc.
+  * Hidden fields: utm_source, utm_medium, utm_campaign, gclid, fbclid, etc.
+- Redirect URL: /thank-you/quote
+
+FORM 2: Contact Form
+- Name: RS Contact Form
+- Fields:
+  * First Name (required)
+  * Last Name (required)
+  * Email (required)
+  * Phone (required)
+  * Company Name
+  * Inquiry Type (dropdown)
+  * Message (textarea)
+- Redirect URL: /thank-you/contact
+
+FORM 3: Consultation Booking
+- Name: RS Consultation Request
+- Fields:
+  * First Name (required)
+  * Last Name (required)
+  * Email (required)
+  * Phone (required)
+  * Company Name (required)
+  * Consultation Type (dropdown)
+  * Preferred Time (dropdown)
+- Redirect URL: /thank-you/consultation
+
+
+4.2 EMBED FORMS IN PAGES
+------------------------
+Option A - Use GHL Form Element:
+1. Edit the page in GHL builder
+2. Replace the HTML form with a GHL Form element
+3. Select your created form
+4. Style to match
+
+Option B - Keep HTML Forms + Connect via Webhook:
+1. Keep the HTML forms in the custom code
+2. Add JavaScript to submit to GHL webhook
+3. More complex but preserves exact styling
+
+
+4.3 SET UP FORM WORKFLOWS
+-------------------------
+For each form, create an automation workflow:
+
+1. Go to Automations > Workflows
+2. Create workflow: "Quote Request Received"
+3. Trigger: Form Submitted > RS Quote Request
+4. Actions:
+   - Create/Update Contact
+   - Add Tag: "Quote Request"
+   - Send notification email to your team
+   - Send confirmation email to lead
+   - (Optional) Create opportunity in pipeline
+   - (Optional) Assign to user
+
+Repeat for Contact and Consultation forms.
+
+
+================================================================================
+PART 5: SET UP TRACKING (OPTIONAL)
+================================================================================
+
+5.1 GOOGLE ANALYTICS 4
+----------------------
+Your GA4 Measurement ID: G-XHZ0XZW8L3
+
+1. Go to Settings > Custom Code > Head Code
+2. Add GA4 script:
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHZ0XZW8L3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XHZ0XZW8L3');
+</script>
+
+
+5.2 GOOGLE ADS CONVERSION TRACKING
+----------------------------------
+Your Google Ads Conversion ID: AW-17500834233
+
+Combined tracking code (includes both GA4 + Google Ads):
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHZ0XZW8L3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XHZ0XZW8L3');
+  gtag('config', 'AW-17500834233');
+</script>
+
+To fire form fill conversion on thank you pages, add:
+
+<script>
+  gtag('event', 'conversion', {
+    'send_to': 'AW-17500834233/tWZPCIWe7NwbELmThplB',
+    'value': 1.0,
+    'currency': 'USD'
+  });
+</script>
+
+This is already added to all thank you pages in this build.
+
+
+5.3 META (FACEBOOK) PIXEL
+-------------------------
+1. Get your Pixel ID
+2. Add to head code:
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+
+3. Add Lead event to thank you pages:
+<script>fbq('track', 'Lead');</script>
+
+
+================================================================================
+PART 6: TESTING
+================================================================================
+
+6.1 PRE-LAUNCH CHECKLIST
+------------------------
+[ ] All pages load without errors
+[ ] Navigation works on all pages
+[ ] Mobile responsive (test on phone)
+[ ] Forms submit successfully
+[ ] Form workflows trigger correctly
+[ ] Thank you page redirects work
+[ ] Phone number links work (tel:+18337772257)
+[ ] Email links work
+[ ] All images load
+[ ] Page titles and meta descriptions set
+[ ] Favicon uploaded
+[ ] SSL certificate active (https://)
+
+
+6.2 TEST FORMS
+--------------
+1. Submit test entries on each form
+2. Verify:
+   - Contact created in GHL
+   - Tags applied
+   - Notification emails sent
+   - Confirmation emails sent
+   - Redirects to correct thank you page
+
+
+6.3 TEST TRACKING
+-----------------
+1. Install Google Tag Assistant browser extension
+2. Visit your site and verify tags fire
+3. Submit a test form
+4. Check GA4 Realtime to see the conversion
+5. Check Meta Events Manager for pixel events
+
+
+================================================================================
+PART 7: GO LIVE
+================================================================================
+
+7.1 FINAL STEPS
+---------------
+1. Connect your custom domain (if not done)
+2. Update any hardcoded test URLs to production
+3. Set up email sending domain (for better deliverability)
+4. Configure your notification email addresses
+5. Remove any test contacts/submissions
+
+
+7.2 POST-LAUNCH
+---------------
+1. Submit sitemap to Google Search Console
+2. Set up Google Business Profile (use Longwood FL address)
+3. Monitor form submissions for first few days
+4. Check for any 404 errors in analytics
+5. Set up uptime monitoring (optional)
+
+
+================================================================================
+QUICK REFERENCE
+================================================================================
+
+COMPANY INFO:
+- Phone: (833) 777-2257
+- Address: 1687 Timocuan Way Unit 113, Longwood FL 32750
+- Website: rackstoragesolutions.com
+
+FILE STRUCTURE:
+- /css/styles.css          - Main stylesheet
+- /schema/organization.json - Structured data
+- /pages/core/             - Main pages
+- /pages/services/         - Service pages
+- /pages/industries/       - Industry pages
+- /pages/authority/        - Resource pages
+- /pages/landing/          - PPC landing pages
+- /pages/thank-you/        - Confirmation pages
+- /templates/              - Base template reference
+
+SUPPORT:
+- GHL Documentation: https://help.gohighlevel.com
+- GHL Community: https://community.gohighlevel.com
+
+
+================================================================================
+NOTES
+================================================================================
+
+- The HTML files contain page content only (no <html>, <head>, <body> tags)
+- GHL will wrap your content in its own page structure
+- CSS variables are defined in styles.css and used throughout
+- Forms in HTML are placeholders - replace with GHL form elements or webhooks
+- Images referenced in HTML need to be uploaded to GHL Media Library
+- Update image src URLs to match your GHL hosted URLs
+
+
+================================================================================

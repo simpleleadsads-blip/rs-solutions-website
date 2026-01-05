@@ -1,0 +1,227 @@
+<!--
+  ============================================
+  RACK STORAGE SOLUTIONS - PERMITTING SERVICES LANDING PAGE
+  ============================================
+  Meta Title: Pallet Rack Permitting Services | Rack Storage Solutions
+  Meta Description: Get help with pallet rack permits. PE-stamped drawings, permit applications, building department coordination. Nationwide service from Rack Storage Solutions.
+
+  USAGE: PPC landing page for permitting searches (especially California)
+-->
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.rackstoragesolutions.com/permitting-services/#webpage",
+  "name": "Pallet Rack Permitting Services",
+  "description": "Professional permitting services for pallet rack installations including PE-stamped drawings and permit application handling.",
+  "isPartOf": {"@id": "https://www.rackstoragesolutions.com/#website"}
+}
+</script>
+
+<!-- ============================================
+     HERO SECTION
+     ============================================ -->
+<section class="section" style="padding: var(--space-8) 0;">
+  <div class="container">
+    <div class="grid grid--2" style="gap: var(--space-12); align-items: start;">
+      <!-- Left: Content -->
+      <div>
+        <p style="color: var(--primary-red); font-weight: 600; margin-bottom: var(--space-2);">NATIONWIDE PERMITTING</p>
+        <h1 style="font-size: var(--text-4xl);">Pallet Rack Permits Made Easy</h1>
+        <p class="lead" style="margin-bottom: var(--space-6);">We handle the engineering, drawings, and permit applications so you can focus on your operation. Particularly experienced with California's strict requirements.</p>
+
+        <!-- What We Handle -->
+        <div style="margin-top: var(--space-6);">
+          <h3 style="margin-bottom: var(--space-4);">What We Handle</h3>
+
+          <div class="card" style="padding: var(--space-4); margin-bottom: var(--space-3);">
+            <h4 style="margin-bottom: var(--space-2);">PE-Stamped Engineered Drawings</h4>
+            <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Professional engineering drawings stamped by licensed PEs in your state. Required for most jurisdictions.</p>
+          </div>
+
+          <div class="card" style="padding: var(--space-4); margin-bottom: var(--space-3);">
+            <h4 style="margin-bottom: var(--space-2);">Seismic Calculations</h4>
+            <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Site-specific seismic design per ANSI MH16.1. Required in California and other seismic zones.</p>
+          </div>
+
+          <div class="card" style="padding: var(--space-4); margin-bottom: var(--space-3);">
+            <h4 style="margin-bottom: var(--space-2);">Permit Application Preparation</h4>
+            <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Complete permit packages ready for submittal. All required forms and documentation.</p>
+          </div>
+
+          <div class="card" style="padding: var(--space-4);">
+            <h4 style="margin-bottom: var(--space-2);">Plan Check Coordination</h4>
+            <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">We respond to plan check comments and revisions to keep your permit moving.</p>
+          </div>
+        </div>
+
+        <!-- California Callout -->
+        <div style="margin-top: var(--space-6); padding: var(--space-5); background: #FFF5F5; border-left: 4px solid var(--primary-red); border-radius: var(--radius-md);">
+          <h4 style="color: var(--primary-red); margin-bottom: var(--space-2);">California Expertise</h4>
+          <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">California has the strictest rack permitting requirements in the country. We work with California building departments regularly and understand what they need. LA, Bay Area, San Diego—we've got you covered.</p>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div>
+        <div class="card" style="padding: var(--space-6); border: 2px solid var(--primary-red);">
+          <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-2); text-align: center;">Get Permitting Help</h2>
+          <p style="color: var(--medium-gray); font-size: var(--text-sm); text-align: center; margin-bottom: var(--space-4);">Tell us about your project and we'll determine what's needed.</p>
+
+          <!-- FORM: quote_request (permitting variant) -->
+          <form id="permitting-form" data-form-type="quote_request">
+            <div class="form-group">
+              <label for="first_name" class="form-label">First Name *</label>
+              <input type="text" id="first_name" name="first_name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="last_name" class="form-label">Last Name *</label>
+              <input type="text" id="last_name" name="last_name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email *</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone *</label>
+              <input type="tel" id="phone" name="phone" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company" class="form-label">Company Name</label>
+              <input type="text" id="company" name="company" class="form-input">
+            </div>
+
+            <!-- Pre-select permitting -->
+            <input type="hidden" name="service_interest" value="permitting">
+
+            <div class="form-group">
+              <label for="project_details" class="form-label">Project Details</label>
+              <textarea id="project_details" name="project_details" class="form-textarea" rows="4" placeholder="Tell us about your project:&#10;- Location (city/state)&#10;- Approximate rack height&#10;- New installation or existing?&#10;- Any known permit requirements?"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline" class="form-label">Timeline</label>
+              <select id="timeline" name="timeline" class="form-select">
+                <option value="">Select timeline...</option>
+                <option value="asap">ASAP / Urgent</option>
+                <option value="1_month">Within 1 month</option>
+                <option value="1_3_months">1-3 months</option>
+                <option value="3_6_months">3-6 months</option>
+                <option value="planning">Just planning / researching</option>
+              </select>
+            </div>
+
+            <!-- Hidden Attribution Fields -->
+            <input type="hidden" name="utm_source" id="utm_source">
+            <input type="hidden" name="utm_medium" id="utm_medium">
+            <input type="hidden" name="utm_campaign" id="utm_campaign">
+            <input type="hidden" name="utm_content" id="utm_content">
+            <input type="hidden" name="utm_term" id="utm_term">
+            <input type="hidden" name="gclid" id="gclid">
+            <input type="hidden" name="fbclid" id="fbclid">
+            <input type="hidden" name="landing_page" id="landing_page">
+            <input type="hidden" name="first_referrer" id="first_referrer">
+            <input type="hidden" name="traffic_type" id="traffic_type">
+            <input type="hidden" name="conversion_page" id="conversion_page">
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%; margin-top: var(--space-4);">Get Permitting Help</button>
+          </form>
+        </div>
+
+        <!-- Phone -->
+        <div style="text-align: center; margin-top: var(--space-4);">
+          <p style="color: var(--medium-gray); margin-bottom: var(--space-2);">Questions? Call us:</p>
+          <a href="tel:+18337772257" style="font-size: var(--text-xl); font-weight: bold; color: var(--primary-red);">(833) 777-2257</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PROCESS
+     ============================================ -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="text-center" style="margin-bottom: var(--space-8);">The Permitting Process</h2>
+
+    <div class="grid grid--5" style="gap: var(--space-4);">
+      <div style="text-align: center;">
+        <div style="width: 40px; height: 40px; background: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto var(--space-2);">1</div>
+        <h4 style="font-size: var(--text-sm); margin-bottom: var(--space-1);">Requirements Research</h4>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-xs);">We verify local requirements</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="width: 40px; height: 40px; background: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto var(--space-2);">2</div>
+        <h4 style="font-size: var(--text-sm); margin-bottom: var(--space-1);">Engineering</h4>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-xs);">PE-stamped drawings prepared</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="width: 40px; height: 40px; background: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto var(--space-2);">3</div>
+        <h4 style="font-size: var(--text-sm); margin-bottom: var(--space-1);">Submittal</h4>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-xs);">Permit application filed</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="width: 40px; height: 40px; background: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto var(--space-2);">4</div>
+        <h4 style="font-size: var(--text-sm); margin-bottom: var(--space-1);">Plan Check</h4>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-xs);">Revisions handled</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="width: 40px; height: 40px; background: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin: 0 auto var(--space-2);">5</div>
+        <h4 style="font-size: var(--text-sm); margin-bottom: var(--space-1);">Approval</h4>
+        <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-xs);">Permit issued</p>
+      </div>
+    </div>
+
+    <p style="text-align: center; color: var(--medium-gray); margin-top: var(--space-6);">Typical timeline: 2-6 weeks depending on jurisdiction</p>
+  </div>
+</section>
+
+<!-- ============================================
+     WHEN NEEDED
+     ============================================ -->
+<section class="section">
+  <div class="container container--narrow">
+    <h2 class="text-center" style="margin-bottom: var(--space-8);">When Do You Need Permits?</h2>
+
+    <div class="grid grid--2" style="gap: var(--space-6);">
+      <div class="card" style="padding: var(--space-5); border-left: 4px solid var(--primary-red);">
+        <h4 style="margin-bottom: var(--space-2);">Usually Required</h4>
+        <ul style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">
+          <li>Rack over 8-12 feet high (varies by location)</li>
+          <li>Any installation in California</li>
+          <li>High seismic zones (SDC D, E, F)</li>
+          <li>Storage of hazardous materials</li>
+          <li>Mezzanines or rack-supported platforms</li>
+        </ul>
+      </div>
+
+      <div class="card" style="padding: var(--space-5); border-left: 4px solid #28a745;">
+        <h4 style="margin-bottom: var(--space-2);">Usually Not Required</h4>
+        <ul style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">
+          <li>Short shelving under 6 feet</li>
+          <li>Low seismic zones with low rack</li>
+          <li>Some jurisdictions under 8 feet</li>
+        </ul>
+        <p style="margin-top: var(--space-2); font-size: var(--text-xs); color: var(--medium-gray);"><em>Note: We always verify with local building department</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CTA
+     ============================================ -->
+<section class="cta-section">
+  <div class="container text-center">
+    <h2 class="cta-section__title">Not Sure If You Need Permits?</h2>
+    <p class="cta-section__text">Tell us your location and project details. We'll research the requirements for you.</p>
+    <a href="#permitting-form" class="btn btn--primary btn--lg" onclick="document.getElementById('first_name').focus(); return false;">Get Started</a>
+  </div>
+</section>

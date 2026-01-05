@@ -1,0 +1,106 @@
+<!--
+  ============================================
+  RACK STORAGE SOLUTIONS - THANK YOU PAGE (QUOTE REQUEST)
+  ============================================
+  Meta Title: Thank You for Your Quote Request | Rack Storage Solutions
+  Meta Description: Thank you for requesting a quote from Rack Storage Solutions. We'll be in touch within one business day.
+
+  CONVERSION PAGE: This page triggers lead conversion tracking
+  NOINDEX: Yes - thank you pages should not be indexed
+-->
+
+<!-- Meta: noindex -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Thank You - Quote Request",
+  "description": "Confirmation page for quote request submissions."
+}
+</script>
+
+<!-- Conversion Tracking - fires on page load -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Fire Google Ads conversion
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17500834233/tWZPCIWe7NwbELmThplB',
+      'value': 1.0,
+      'currency': 'USD'
+    });
+  }
+
+  // Fire RS Events conversion
+  if (typeof RSEvents !== 'undefined') {
+    RSEvents.trackQuoteRequest();
+  }
+
+  // Set conversion page in attribution
+  if (typeof RSAttribution !== 'undefined') {
+    RSAttribution.setConversionPage('/thank-you/quote');
+  }
+});
+</script>
+
+<!-- ============================================
+     THANK YOU CONTENT
+     ============================================ -->
+<section class="section" style="padding: var(--space-16) 0; min-height: 60vh; display: flex; align-items: center;">
+  <div class="container container--narrow text-center">
+    <!-- Success Icon -->
+    <div style="width: 80px; height: 80px; background: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" style="width: 40px; height: 40px;"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+
+    <h1>Thank You for Your Quote Request!</h1>
+    <p class="lead" style="margin-bottom: var(--space-6);">We've received your information and will be in touch within <strong>1 business day</strong> with your personalized quote.</p>
+
+    <!-- What Happens Next -->
+    <div class="card" style="padding: var(--space-6); text-align: left; margin-bottom: var(--space-8);">
+      <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">What Happens Next</h2>
+
+      <div style="display: flex; gap: var(--space-4); margin-bottom: var(--space-4);">
+        <div style="width: 32px; height: 32px; background: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+        <div>
+          <strong>We Review Your Request</strong>
+          <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Our team reviews the details you provided to understand your project requirements.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: var(--space-4); margin-bottom: var(--space-4);">
+        <div style="width: 32px; height: 32px; background: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+        <div>
+          <strong>We May Call to Clarify</strong>
+          <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">If we have questions about your project, we'll reach out to ensure your quote is accurate.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: var(--space-4);">
+        <div style="width: 32px; height: 32px; background: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+        <div>
+          <strong>You Receive Your Quote</strong>
+          <p style="margin: 0; color: var(--medium-gray); font-size: var(--text-sm);">Detailed pricing for equipment, delivery, and installation—typically within 1-5 business days depending on complexity.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Need Faster Response -->
+    <div style="padding: var(--space-5); background: var(--light-gray); border-radius: var(--radius-lg); margin-bottom: var(--space-8);">
+      <p style="margin-bottom: var(--space-2);"><strong>Need a faster response?</strong></p>
+      <p style="color: var(--medium-gray); margin-bottom: var(--space-3);">Call us directly and reference your quote request:</p>
+      <a href="tel:+18337772257" class="btn btn--primary">Call (833) 777-2257</a>
+    </div>
+
+    <!-- Continue Browsing -->
+    <p style="color: var(--medium-gray);">While you wait, feel free to explore:</p>
+    <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-4);">
+      <a href="/services" class="btn btn--ghost">Our Services</a>
+      <a href="/resources/how-it-works" class="btn btn--ghost">How It Works</a>
+      <a href="/resources/faq" class="btn btn--ghost">FAQ</a>
+    </div>
+  </div>
+</section>
