@@ -1,14 +1,80 @@
 ================================================================================
-RACK STORAGE SOLUTIONS - GO HIGH LEVEL IMPLEMENTATION GUIDE
+RACK STORAGE SOLUTIONS - WEBSITE IMPLEMENTATION GUIDE
 ================================================================================
 
-This guide walks you through implementing the RS Solutions website in Go High Level.
-Follow these steps in order for the smoothest setup.
+This guide covers two deployment options:
+1. GitHub Pages (CURRENTLY LIVE)
+2. Go High Level (Alternative option)
 
 
 ================================================================================
-PART 1: INITIAL SETUP
+PART 0: GITHUB PAGES - CURRENTLY LIVE
 ================================================================================
+
+YOUR LIVE WEBSITE:
+https://simpleleadsads-blip.github.io/rs-solutions-website/
+
+GITHUB REPOSITORY:
+https://github.com/simpleleadsads-blip/rs-solutions-website
+
+
+0.1 HOW IT WORKS
+----------------
+- 35 complete HTML pages are in the /docs folder
+- GitHub Pages serves these automatically
+- All CSS is inlined (no external files needed)
+- GA4 + Google Ads tracking is already configured
+
+
+0.2 TO MAKE EDITS
+-----------------
+1. Edit the source files in /pages/ folder
+2. Run the build script: python3 build.py
+3. Commit and push to GitHub:
+   git add .
+   git commit -m "Your update message"
+   git push origin main
+4. Site auto-updates in 1-2 minutes
+
+
+0.3 WHAT'S INCLUDED
+-------------------
+35 Pages:
+- Home (index.html)
+- About, Contact, Services hub, Nationwide
+- 8 Service pages
+- 5 Industry pages
+- 7 Resource/FAQ pages
+- 5 Landing pages (for PPC)
+- 4 Thank-you pages (with conversion tracking)
+
+Tracking:
+- GA4: G-XHZ0XZW8L3
+- Google Ads: AW-17500834233
+- Conversion Label: tWZPCIWe7NwbELmThplB
+
+
+0.4 CUSTOM DOMAIN (OPTIONAL)
+----------------------------
+To use your own domain (e.g., rackstoragesolutions.com):
+
+1. Go to GitHub repo > Settings > Pages
+2. Under "Custom domain", enter your domain
+3. Add DNS records at your registrar:
+   - CNAME: www -> simpleleadsads-blip.github.io
+   - A Records (for apex domain):
+     185.199.108.153
+     185.199.109.153
+     185.199.110.153
+     185.199.111.153
+4. Enable "Enforce HTTPS"
+
+
+================================================================================
+PART 1: GO HIGH LEVEL OPTION (ALTERNATIVE)
+================================================================================
+
+If you prefer to use GHL instead of GitHub Pages:
 
 1.1 CREATE YOUR GHL SITE
 ------------------------
@@ -38,39 +104,43 @@ Option B - Connect custom domain:
 
 1.3 UPLOAD YOUR LOGO
 --------------------
-1. Go to Sites > Media Library
-2. Click "Upload"
-3. Upload: FINAL RS SOLUTIONS LOGO.png
-4. Copy the hosted URL (you'll need this for pages)
-5. Also upload any other images you want to use
+Logo is already hosted at:
+https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png
+
+Or upload FINAL RS SOLUTIONS LOGO.png to GHL Media Library.
 
 
 ================================================================================
-PART 2: SET UP GLOBAL STYLES (CSS)
+PART 2: GHL - SET UP GLOBAL STYLES (CSS)
 ================================================================================
 
 2.1 ADD CUSTOM CSS
 ------------------
 1. In your website editor, go to Settings > Custom Code
 2. Or: Click the page settings gear > Custom CSS/JS
-3. Copy the ENTIRE contents of: css/styles.css
+3. Copy the ENTIRE contents of: css/brand.css
 4. Paste into the Custom CSS section
 5. Save
 
 NOTE: If GHL has a "Global CSS" option, use that so styles apply to all pages.
-Otherwise, you'll need to add CSS to each page's custom code section.
 
 
-2.2 ADD TRACKING CODE (OPTIONAL - DO LATER)
--------------------------------------------
-If you have tracking IDs ready:
-1. Go to Settings > Custom Code > Head tracking code
-2. Add your Google Tag Manager or GA4 code
-3. For form tracking, this will be configured in Part 4
+2.2 ADD TRACKING CODE
+---------------------
+Add to Settings > Custom Code > Head tracking code:
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHZ0XZW8L3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XHZ0XZW8L3');
+  gtag('config', 'AW-17500834233');
+</script>
 
 
 ================================================================================
-PART 3: CREATE PAGES
+PART 3: GHL - CREATE PAGES
 ================================================================================
 
 For each page, follow this process:
@@ -85,22 +155,14 @@ For each page, follow this process:
 
 3.2 ADD PAGE CONTENT
 --------------------
-Method A - Full Custom Code Block (Recommended):
 1. Add a "Custom Code" or "HTML" element to the page
 2. Copy the HTML from the corresponding file in /pages/
 3. Paste into the custom code block
 4. The CSS from Part 2 will style it automatically
 
-Method B - Use GHL Builder + Custom Sections:
-1. Build header/footer with GHL elements
-2. Use Custom Code blocks for complex sections
-3. More control but more work
-
 
 3.3 PAGE CREATION CHECKLIST
 ---------------------------
-Create pages in this order:
-
 CORE PAGES:
 [ ] Home                    /                    (pages/core/home.html)
 [ ] About                   /about               (pages/core/about.html)
@@ -149,27 +211,8 @@ THANK YOU PAGES:
 [ ] Consultation Thank You  /thank-you/consultation
 
 
-3.4 SET UP NAVIGATION
----------------------
-1. Create a header element (or use GHL's header builder)
-2. Add your logo (use the URL from Media Library)
-3. Add navigation links:
-   - Services (dropdown with service pages)
-   - Industries (dropdown with industry pages)
-   - Resources (dropdown with resource pages)
-   - About
-   - Contact
-   - "Get a Quote" button -> /quote
-
-4. Create footer with:
-   - Company info
-   - Quick links
-   - Contact info: (833) 777-2257
-   - Address: 1687 Timocuan Way Unit 113, Longwood FL 32750
-
-
 ================================================================================
-PART 4: SET UP FORMS
+PART 4: GHL - SET UP FORMS
 ================================================================================
 
 4.1 CREATE FORMS IN GHL
@@ -179,13 +222,13 @@ Go to Sites > Forms and create these forms:
 FORM 1: Quote Request Form
 - Name: RS Quote Request
 - Fields:
-  * First Name (required)
-  * Last Name (required)
-  * Email (required)
-  * Phone (required)
-  * Company Name
+  * First Name (required) - Single Line
+  * Last Name (required) - Single Line
+  * Email (required) - Single Line (email type)
+  * Phone (required) - Single Line (phone type)
+  * Company Name - Single Line
   * Service Interest (dropdown): Pallet Racking, Used Rack, Design, etc.
-  * Project Details (textarea)
+  * Project Details (textarea) - Text Box
   * Timeline (dropdown): ASAP, 1 month, 1-3 months, etc.
   * Hidden fields: utm_source, utm_medium, utm_campaign, gclid, fbclid, etc.
 - Redirect URL: /thank-you/quote
@@ -215,21 +258,60 @@ FORM 3: Consultation Booking
 - Redirect URL: /thank-you/consultation
 
 
-4.2 EMBED FORMS IN PAGES
-------------------------
-Option A - Use GHL Form Element:
-1. Edit the page in GHL builder
-2. Replace the HTML form with a GHL Form element
-3. Select your created form
-4. Style to match
+4.2 DROPDOWN OPTIONS
+--------------------
+Service Interest:
+- Pallet Racking (New)
+- Used Pallet Rack
+- Warehouse Design & Layout
+- Shelving Systems
+- Installation / Teardown
+- Warehouse Relocation
+- Permitting & Engineering
+- Rack Safety Inspection
+- Other / General Inquiry
 
-Option B - Keep HTML Forms + Connect via Webhook:
-1. Keep the HTML forms in the custom code
-2. Add JavaScript to submit to GHL webhook
-3. More complex but preserves exact styling
+Timeline:
+- ASAP / Urgent
+- Within 1 month
+- 1-3 months
+- 3-6 months
+- Just planning / researching
+
+Consultation Type:
+- New Warehouse Setup
+- Warehouse Expansion
+- Layout Optimization
+- Facility Relocation
+- Other
+
+Preferred Time:
+- Morning (8am-12pm CST)
+- Afternoon (12pm-5pm CST)
 
 
-4.3 SET UP FORM WORKFLOWS
+4.3 CUSTOM FIELDS FOR ATTRIBUTION
+---------------------------------
+Create these custom fields in GHL (Settings > Custom Fields):
+
+Field Name          Type    Unique Key
+-----------         ----    ----------
+utm_source          TEXT    {{ contact.utm_source }}
+utm_medium          TEXT    {{ contact.utm_medium }}
+utm_campaign        TEXT    {{ contact.utm_campaign }}
+utm_content         TEXT    {{ contact.utm_content }}
+utm_term            TEXT    {{ contact.utm_term }}
+gclid               TEXT    {{ contact.gclid }}
+fbclid              TEXT    {{ contact.fbclid }}
+landing_page        TEXT    {{ contact.landing_page }}
+first_referrer      TEXT    {{ contact.first_referrer }}
+traffic_type        TEXT    {{ contact.traffic_type }}
+conversion_page     TEXT    {{ contact.conversion_page }}
+
+NOTE: Company Name already exists as a standard GHL field - don't recreate it.
+
+
+4.4 SET UP FORM WORKFLOWS
 -------------------------
 For each form, create an automation workflow:
 
@@ -248,42 +330,23 @@ Repeat for Contact and Consultation forms.
 
 
 ================================================================================
-PART 5: SET UP TRACKING (OPTIONAL)
+PART 5: CONVERSION TRACKING
 ================================================================================
 
 5.1 GOOGLE ANALYTICS 4
 ----------------------
-Your GA4 Measurement ID: G-XHZ0XZW8L3
+Measurement ID: G-XHZ0XZW8L3
 
-1. Go to Settings > Custom Code > Head Code
-2. Add GA4 script:
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHZ0XZW8L3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XHZ0XZW8L3');
-</script>
+Already configured in the GitHub Pages build.
+For GHL, add to head code.
 
 
-5.2 GOOGLE ADS CONVERSION TRACKING
-----------------------------------
-Your Google Ads Conversion ID: AW-17500834233
+5.2 GOOGLE ADS CONVERSION
+-------------------------
+Conversion ID: AW-17500834233
+Conversion Label: tWZPCIWe7NwbELmThplB
 
-Combined tracking code (includes both GA4 + Google Ads):
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHZ0XZW8L3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XHZ0XZW8L3');
-  gtag('config', 'AW-17500834233');
-</script>
-
-To fire form fill conversion on thank you pages, add:
-
+Fire on thank you pages:
 <script>
   gtag('event', 'conversion', {
     'send_to': 'AW-17500834233/tWZPCIWe7NwbELmThplB',
@@ -292,13 +355,12 @@ To fire form fill conversion on thank you pages, add:
   });
 </script>
 
-This is already added to all thank you pages in this build.
+Already added to all thank you pages in the build.
 
 
 5.3 META (FACEBOOK) PIXEL
 -------------------------
-1. Get your Pixel ID
-2. Add to head code:
+Not yet configured. When ready, add to head code:
 
 <script>
 !function(f,b,e,v,n,t,s)
@@ -313,107 +375,53 @@ fbq('init', 'YOUR_PIXEL_ID');
 fbq('track', 'PageView');
 </script>
 
-3. Add Lead event to thank you pages:
+Add Lead event to thank you pages:
 <script>fbq('track', 'Lead');</script>
-
-
-================================================================================
-PART 6: TESTING
-================================================================================
-
-6.1 PRE-LAUNCH CHECKLIST
-------------------------
-[ ] All pages load without errors
-[ ] Navigation works on all pages
-[ ] Mobile responsive (test on phone)
-[ ] Forms submit successfully
-[ ] Form workflows trigger correctly
-[ ] Thank you page redirects work
-[ ] Phone number links work (tel:+18337772257)
-[ ] Email links work
-[ ] All images load
-[ ] Page titles and meta descriptions set
-[ ] Favicon uploaded
-[ ] SSL certificate active (https://)
-
-
-6.2 TEST FORMS
---------------
-1. Submit test entries on each form
-2. Verify:
-   - Contact created in GHL
-   - Tags applied
-   - Notification emails sent
-   - Confirmation emails sent
-   - Redirects to correct thank you page
-
-
-6.3 TEST TRACKING
------------------
-1. Install Google Tag Assistant browser extension
-2. Visit your site and verify tags fire
-3. Submit a test form
-4. Check GA4 Realtime to see the conversion
-5. Check Meta Events Manager for pixel events
-
-
-================================================================================
-PART 7: GO LIVE
-================================================================================
-
-7.1 FINAL STEPS
----------------
-1. Connect your custom domain (if not done)
-2. Update any hardcoded test URLs to production
-3. Set up email sending domain (for better deliverability)
-4. Configure your notification email addresses
-5. Remove any test contacts/submissions
-
-
-7.2 POST-LAUNCH
----------------
-1. Submit sitemap to Google Search Console
-2. Set up Google Business Profile (use Longwood FL address)
-3. Monitor form submissions for first few days
-4. Check for any 404 errors in analytics
-5. Set up uptime monitoring (optional)
 
 
 ================================================================================
 QUICK REFERENCE
 ================================================================================
 
+LIVE SITE:
+https://simpleleadsads-blip.github.io/rs-solutions-website/
+
+GITHUB REPO:
+https://github.com/simpleleadsads-blip/rs-solutions-website
+
 COMPANY INFO:
 - Phone: (833) 777-2257
 - Address: 1687 Timocuan Way Unit 113, Longwood FL 32750
-- Website: rackstoragesolutions.com
+
+LOGO URL:
+https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png
+
+TRACKING IDS:
+- GA4: G-XHZ0XZW8L3
+- Google Ads: AW-17500834233
+- Conversion Label: tWZPCIWe7NwbELmThplB
 
 FILE STRUCTURE:
-- /css/styles.css          - Main stylesheet
-- /schema/organization.json - Structured data
-- /pages/core/             - Main pages
-- /pages/services/         - Service pages
-- /pages/industries/       - Industry pages
-- /pages/authority/        - Resource pages
-- /pages/landing/          - PPC landing pages
-- /pages/thank-you/        - Confirmation pages
-- /templates/              - Base template reference
-
-SUPPORT:
-- GHL Documentation: https://help.gohighlevel.com
-- GHL Community: https://community.gohighlevel.com
+- /docs/                   - Built HTML pages (served by GitHub Pages)
+- /pages/                  - Source page content
+- /css/brand.css           - Main stylesheet
+- /build.py                - Build script to regenerate pages
+- /schema/                 - Structured data templates
 
 
 ================================================================================
-NOTES
+HOW TO MAKE UPDATES
 ================================================================================
 
-- The HTML files contain page content only (no <html>, <head>, <body> tags)
-- GHL will wrap your content in its own page structure
-- CSS variables are defined in styles.css and used throughout
-- Forms in HTML are placeholders - replace with GHL form elements or webhooks
-- Images referenced in HTML need to be uploaded to GHL Media Library
-- Update image src URLs to match your GHL hosted URLs
+1. Edit files in /pages/ folder (these are the source files)
+2. Run: python3 build.py
+3. Commit and push:
+   git add .
+   git commit -m "Description of changes"
+   git push origin main
+4. Site updates automatically in 1-2 minutes
+
+Or ask Claude to make the edits - I have access to these files.
 
 
 ================================================================================
