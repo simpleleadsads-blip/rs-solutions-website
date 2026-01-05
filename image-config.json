@@ -1,0 +1,89 @@
+{
+  "images": {
+    "hero-warehouse.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+    "about-warehouse.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+    "warehouse-team.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+    "warehouse-overview.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+    "multi-site-warehouse.jpg": "https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+    "usa-coverage-map.svg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "usa-map-coverage.svg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+
+    "services/pallet-racking.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/pallet-racking-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "services/pallet-racking-overview.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+    "services/selective-rack.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/drive-in-rack.jpg": "https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/push-back-rack.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/cantilever-rack.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+
+    "services/used-rack.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/used-rack-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "services/used-rack-stack.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "services/warehouse-design.jpg": "https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/warehouse-design-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "services/warehouse-design-before-after.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "services/shelving.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/shelving-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "services/steel-shelving.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/wire-shelving.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/rivet-shelving.jpg": "https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/clip-shelving.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+
+    "services/installation.jpg": "https://images.pexels.com/photos/1267337/pexels-photo-1267337.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/installation-hero.jpg": "https://images.pexels.com/photos/1267337/pexels-photo-1267337.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "services/installation-process.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "services/relocation.jpg": "https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/relocation-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "services/relocation-loading.jpg": "https://images.pexels.com/photos/1267337/pexels-photo-1267337.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "services/permitting.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/permitting-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+
+    "services/safety-inspection.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "services/safety-inspection-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+
+    "industries/3pl-logistics.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "industries/3pl-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "industries/3pl-design.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "industries/manufacturing.jpg": "https://images.pexels.com/photos/8973680/pexels-photo-8973680.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "industries/manufacturing-hero.jpg": "https://images.pexels.com/photos/8973680/pexels-photo-8973680.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "industries/manufacturing-heavy-duty.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+    "industries/manufacturing-flow.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "industries/ecommerce.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "industries/ecommerce-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "industries/ecommerce-layout.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "industries/cold-storage.jpg": "https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "industries/cold-storage-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "industries/cold-storage-galvanized.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+    "industries/cold-storage-installation.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "industries/retail.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "industries/retail-hero.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop",
+    "industries/retail-layout.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "industries/industry-expertise.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "racking-types/selective-rack.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "racking-types/drive-in-rack.jpg": "https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "racking-types/push-back-rack.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "racking-types/pallet-flow-rack.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "racking-types/cantilever-rack.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+
+    "resources/california-permits.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+    "resources/used-rack-inspection.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "safety/rack-safety-importance.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+
+    "process/consultation.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+    "process/design-quote.jpg": "https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+    "process/permitting.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+    "process/delivery.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+    "process/installation.jpg": "https://images.pexels.com/photos/1267337/pexels-photo-1267337.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+  }
+}

@@ -6,9 +6,18 @@ Combines base template with page content and inlines CSS.
 
 import os
 import re
+import json
 
 # Base paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Load image configuration
+IMAGE_CONFIG_FILE = os.path.join(BASE_DIR, 'image-config.json')
+IMAGE_MAP = {}
+if os.path.exists(IMAGE_CONFIG_FILE):
+    with open(IMAGE_CONFIG_FILE, 'r') as f:
+        config = json.load(f)
+        IMAGE_MAP = config.get('images', {})
 PAGES_DIR = os.path.join(BASE_DIR, 'pages')
 CSS_FILE = os.path.join(BASE_DIR, 'css', 'brand.css')
 OUTPUT_DIR = os.path.join(BASE_DIR, 'docs')  # GitHub Pages serves from /docs
@@ -328,6 +337,32 @@ def fix_internal_links(content):
     content = re.sub(r'href="/rs-solutions-website/([^"#]+)(?<!\.html)"', r'href="/rs-solutions-website/\1.html"', content)
     return content
 
+def replace_images(content):
+    """Replace local image paths with CDN URLs from image-config.json."""
+    def replace_image(match):
+        img_path = match.group(1)
+        # Look up in IMAGE_MAP
+        if img_path in IMAGE_MAP:
+            return f'src="{IMAGE_MAP[img_path]}"'
+        # Try without leading slash
+        if img_path.startswith('/'):
+            img_path_no_slash = img_path[1:]
+            if img_path_no_slash in IMAGE_MAP:
+                return f'src="{IMAGE_MAP[img_path_no_slash]}"'
+        # Return original if no match (will show broken image, easy to identify)
+        return match.group(0)
+
+    # Replace src="/images/..." patterns
+    content = re.sub(r'src="/images/([^"]+)"', lambda m: replace_image_path(m.group(1)), content)
+    return content
+
+def replace_image_path(img_path):
+    """Get the CDN URL for an image path."""
+    if img_path in IMAGE_MAP:
+        return f'src="{IMAGE_MAP[img_path]}"'
+    # Fallback to a placeholder
+    return f'src="https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"'
+
 def build_page(template, source_path, output_path, title, description, css_content):
     """Build a single page."""
     source_full = os.path.join(BASE_DIR, source_path)
@@ -341,6 +376,7 @@ def build_page(template, source_path, output_path, title, description, css_conte
     content = read_file(source_full)
     content = strip_comments_and_meta(content)
     content = fix_internal_links(content)
+    content = replace_images(content)
 
     # Get canonical path (without .html for cleaner URLs)
     canonical = output_path.replace('.html', '') if output_path != 'index.html' else ''
