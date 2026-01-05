@@ -94,6 +94,10 @@ def get_template(css_content):
   <meta name="description" content="{{{{META_DESCRIPTION}}}}">
   <link rel="canonical" href="https://simpleleadsads-blip.github.io/rs-solutions-website/{{{{CANONICAL_PATH}}}}">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/rs-solutions-website/favicon.png">
+  <link rel="apple-touch-icon" href="/rs-solutions-website/favicon.png">
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{{{PAGE_TITLE}}}} | Rack Storage Solutions">
