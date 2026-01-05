@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retail | Rack Storage Solutions</title>
+  <meta name="description" content="Storage solutions for retail distribution centers.">
+  <link rel="canonical" href="https://simpleleadsads-blip.github.io/rs-solutions-website/industries/retail">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Retail | Rack Storage Solutions">
+  <meta property="og:description" content="Storage solutions for retail distribution centers.">
+  <meta property="og:image" content="https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHZ0XZW8L3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XHZ0XZW8L3');
+    gtag('config', 'AW-17500834233');
+  </script>
+
+  <style>
+/* ============================================
+   RACK STORAGE SOLUTIONS - BRAND SYSTEM CSS
+   GHL-Compatible | Mobile-First | Production Ready
+   ============================================ */
+
+/* ===========================================
+   CSS CUSTOM PROPERTIES (Brand Variables)
+   =========================================== */
+:root {
+  /* Primary Colors */
+  --primary-red: #E63946;
+  --primary-red-hover: #C5303C;
+  --primary-red-light: rgba(230, 57, 70, 0.1);
+
+  /* Neutrals */
+  --black: #000000;
+  --white: #FFFFFF;
+  --dark-gray: #333333;
+  --medium-gray: #666666;
+  --light-gray: #F5F5F5;
+  --border-gray: #E0E0E0;
+
+  /* Functional Colors */
+  --success: #28A745;
+  --warning: #FFC107;
+  --error: #DC3545;
+  --info: #17A2B8;
+
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Sizes - Mobile First */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;      /* 4px */
+  --space-2: 0.5rem;       /* 8px */
+  --space-3: 0.75rem;      /* 12px */
+  --space-4: 1rem;         /* 16px */
+  --space-5: 1.25rem;      /* 20px */
+  --space-6: 1.5rem;       /* 24px */
+  --space-8: 2rem;         /* 32px */
+  --space-10: 2.5rem;      /* 40px */
+  --space-12: 3rem;        /* 48px */
+  --space-16: 4rem;        /* 64px */
+  --space-20: 5rem;        /* 80px */
+  --space-24: 6rem;        /* 96px */
+
+  /* Layout */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-max: 1400px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* Z-Index Scale */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-tooltip: 600;
+}
+
+
+/* ===========================================
+   RESET & BASE STYLES
+   =========================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+  color: var(--dark-gray);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--primary-red);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--primary-red-hover);
+}
+
+
+/* ===========================================
+   TYPOGRAPHY
+   =========================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: var(--black);
+  margin-bottom: var(--space-4);
+}
+
+h1 {
+  font-size: var(--text-3xl);
+}
+
+h2 {
+  font-size: var(--text-2xl);
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+
+h5, h6 {
+  font-size: var(--text-base);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--text-4xl);
+  }
+
+  h2 {
+    font-size: var(--text-3xl);
+  }
+
+  h3 {
+    font-size: var(--text-2xl);
+  }
+
+  h4 {
+    font-size: var(--text-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: var(--text-5xl);
+  }
+
+  h2 {
+    font-size: var(--text-4xl);
+  }
+}
+
+p {
+  margin-bottom: var(--space-4);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.lead {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--medium-gray);
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: var(--text-xl);
+  }
+}
+
+strong, b {
+  font-weight: var(--font-semibold);
+}
+
+small {
+  font-size: var(--text-sm);
+}
+
+
+/* ===========================================
+   LAYOUT COMPONENTS
+   =========================================== */
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}
+
+.container--narrow {
+  max-width: var(--container-md);
+}
+
+.container--wide {
+  max-width: var(--container-max);
+}
+
+/* Section Spacing */
+.section {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+  }
+}
+
+.section--sm {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.section--lg {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+
+@media (min-width: 768px) {
+  .section--lg {
+    padding-top: var(--space-24);
+    padding-bottom: var(--space-24);
+  }
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 { gap: var(--space-2); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+.gap-8 { gap: var(--space-8); }
+
+
+/* ===========================================
+   BUTTONS
+   =========================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--primary-red-light);
+}
+
+/* Primary Button - Red with white text */
+.btn--primary {
+  background-color: var(--primary-red);
+  color: var(--white);
+  border-color: var(--primary-red);
+}
+
+.btn--primary:hover {
+  background-color: var(--primary-red-hover);
+  border-color: var(--primary-red-hover);
+  color: var(--white);
+}
+
+/* Secondary Button - White with red border */
+.btn--secondary {
+  background-color: var(--white);
+  color: var(--primary-red);
+  border-color: var(--primary-red);
+}
+
+.btn--secondary:hover {
+  background-color: var(--primary-red);
+  color: var(--white);
+}
+
+/* Dark Button - Black background */
+.btn--dark {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.btn--dark:hover {
+  background-color: var(--dark-gray);
+  border-color: var(--dark-gray);
+  color: var(--white);
+}
+
+/* Ghost Button - Transparent */
+.btn--ghost {
+  background-color: transparent;
+  color: var(--dark-gray);
+  border-color: var(--border-gray);
+}
+
+.btn--ghost:hover {
+  background-color: var(--light-gray);
+  border-color: var(--dark-gray);
+}
+
+/* Button Sizes */
+.btn--sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.btn--lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-lg);
+}
+
+.btn--xl {
+  padding: var(--space-5) var(--space-10);
+  font-size: var(--text-xl);
+}
+
+/* Full Width Button */
+.btn--full {
+  width: 100%;
+}
+
+/* Button with Icon */
+.btn svg,
+.btn .icon {
+  width: 1.25em;
+  height: 1.25em;
+  flex-shrink: 0;
+}
+
+
+/* ===========================================
+   CARDS
+   =========================================== */
+.card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.card--interactive:hover {
+  transform: translateY(-4px);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: var(--space-6);
+}
+
+.card__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-3);
+}
+
+.card__text {
+  color: var(--medium-gray);
+  margin-bottom: var(--space-4);
+}
+
+/* Service Card Variant */
+.card--service {
+  border: 1px solid var(--border-gray);
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+}
+
+.card--service .card__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-4);
+  color: var(--primary-red);
+}
+
+/* Feature Card */
+.card--feature {
+  padding: var(--space-6);
+  border-left: 4px solid var(--primary-red);
+}
+
+
+/* ===========================================
+   FORMS
+   =========================================== */
+.form-group {
+  margin-bottom: var(--space-5);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--dark-gray);
+  margin-bottom: var(--space-2);
+}
+
+.form-label--required::after {
+  content: " *";
+  color: var(--primary-red);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  color: var(--dark-gray);
+  background-color: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-red);
+  box-shadow: 0 0 0 3px var(--primary-red-light);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--medium-gray);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23333' d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-3) center;
+  padding-right: var(--space-10);
+}
+
+.form-helper {
+  font-size: var(--text-sm);
+  color: var(--medium-gray);
+  margin-top: var(--space-1);
+}
+
+.form-error {
+  font-size: var(--text-sm);
+  color: var(--error);
+  margin-top: var(--space-1);
+}
+
+/* Checkbox & Radio */
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  cursor: pointer;
+}
+
+.form-check input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--primary-red);
+}
+
+
+/* ===========================================
+   HEADER / NAVIGATION
+   =========================================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  background-color: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+@media (min-width: 1024px) {
+  .header__inner {
+    height: 80px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  height: 40px;
+  width: auto;
+}
+
+@media (min-width: 1024px) {
+  .header__logo img {
+    height: 50px;
+  }
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+  }
+}
+
+.nav__link {
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  color: var(--dark-gray);
+  padding: var(--space-2) 0;
+  position: relative;
+}
+
+.nav__link:hover,
+.nav__link--active {
+  color: var(--primary-red);
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-red);
+  transition: width var(--transition-fast);
+}
+
+.nav__link:hover::after,
+.nav__link--active::after {
+  width: 100%;
+}
+
+/* Dropdown Menu */
+.nav__dropdown {
+  position: relative;
+}
+
+.nav__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 220px;
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-3) 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-fast), visibility var(--transition-fast);
+}
+
+.nav__dropdown:hover .nav__dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__dropdown-link {
+  display: block;
+  padding: var(--space-3) var(--space-5);
+  color: var(--dark-gray);
+  font-size: var(--text-sm);
+}
+
+.nav__dropdown-link:hover {
+  background-color: var(--light-gray);
+  color: var(--primary-red);
+}
+
+/* Mobile Menu Toggle */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark-gray);
+  transition: transform var(--transition-fast);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--white);
+  padding: var(--space-6);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  overflow-y: auto;
+  z-index: var(--z-fixed);
+}
+
+.mobile-nav--open {
+  transform: translateX(0);
+}
+
+.mobile-nav__link {
+  display: block;
+  padding: var(--space-4) 0;
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  color: var(--dark-gray);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.mobile-nav__link:hover {
+  color: var(--primary-red);
+}
+
+
+/* ===========================================
+   HERO SECTIONS
+   =========================================== */
+.hero {
+  position: relative;
+  padding: var(--space-16) 0;
+  background-color: var(--black);
+  color: var(--white);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: var(--space-20) 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: var(--space-24) 0;
+  }
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.hero__content {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: 800px;
+}
+
+.hero__title {
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.hero__subtitle {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .hero__subtitle {
+    font-size: var(--text-xl);
+  }
+}
+
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .hero__cta {
+    flex-direction: row;
+  }
+}
+
+/* Hero Variant - Light */
+.hero--light {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.hero--light .hero__title {
+  color: var(--black);
+}
+
+.hero--light .hero__subtitle {
+  color: var(--medium-gray);
+}
+
+/* Hero Variant - Red Accent */
+.hero--accent {
+  background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
+}
+
+.hero--accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-red);
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  opacity: 0.1;
+}
+
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding-top: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-top: var(--space-16);
+  }
+}
+
+.footer__grid {
+  display: grid;
+  gap: var(--space-8);
+  padding-bottom: var(--space-10);
+}
+
+@media (min-width: 640px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+.footer__brand {
+  max-width: 300px;
+}
+
+.footer__logo {
+  height: 40px;
+  margin-bottom: var(--space-4);
+}
+
+.footer__tagline {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.footer__heading {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.footer__links {
+  list-style: none;
+}
+
+.footer__link {
+  display: block;
+  padding: var(--space-2) 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--primary-red);
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-3);
+}
+
+.footer__contact-item svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--primary-red);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-6) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--text-sm);
+}
+
+.footer__legal {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.footer__legal a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--text-sm);
+}
+
+.footer__legal a:hover {
+  color: var(--white);
+}
+
+
+/* ===========================================
+   DIRECT ANSWER BLOCK (AEO/GEO Optimized)
+   =========================================== */
+.answer-block {
+  background-color: var(--light-gray);
+  border-left: 4px solid var(--primary-red);
+  padding: var(--space-5) var(--space-6);
+  margin-bottom: var(--space-8);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.answer-block p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  margin-bottom: 0;
+}
+
+
+/* ===========================================
+   FAQ ACCORDION
+   =========================================== */
+.faq {
+  margin: var(--space-8) 0;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--space-5) 0;
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  text-align: left;
+  color: var(--dark-gray);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.faq__question:hover {
+  color: var(--primary-red);
+}
+
+.faq__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: transform var(--transition-normal);
+}
+
+.faq__item--open .faq__icon {
+  transform: rotate(180deg);
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-normal);
+}
+
+.faq__item--open .faq__answer {
+  max-height: 500px;
+}
+
+.faq__answer-inner {
+  padding-bottom: var(--space-5);
+  color: var(--medium-gray);
+}
+
+
+/* ===========================================
+   BREADCRUMBS
+   =========================================== */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) 0;
+  font-size: var(--text-sm);
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--medium-gray);
+}
+
+.breadcrumbs__link {
+  color: var(--medium-gray);
+}
+
+.breadcrumbs__link:hover {
+  color: var(--primary-red);
+}
+
+.breadcrumbs__separator {
+  color: var(--border-gray);
+}
+
+.breadcrumbs__current {
+  color: var(--dark-gray);
+  font-weight: var(--font-medium);
+}
+
+
+/* ===========================================
+   TRUST INDICATORS
+   =========================================== */
+.trust-bar {
+  background-color: var(--light-gray);
+  padding: var(--space-6) 0;
+}
+
+.trust-bar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .trust-bar__inner {
+    justify-content: space-between;
+    gap: var(--space-8);
+  }
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--medium-gray);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+}
+
+.trust-item__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-red);
+}
+
+
+/* ===========================================
+   CTA SECTIONS
+   =========================================== */
+.cta-section {
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: var(--space-12) 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta-section {
+    padding: var(--space-16) 0;
+  }
+}
+
+.cta-section__title {
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.cta-section__text {
+  max-width: 600px;
+  margin: 0 auto var(--space-6);
+  opacity: 0.9;
+}
+
+.cta-section .btn--primary {
+  background-color: var(--white);
+  color: var(--primary-red);
+  border-color: var(--white);
+}
+
+.cta-section .btn--primary:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+/* Dark CTA Variant */
+.cta-section--dark {
+  background-color: var(--black);
+}
+
+.cta-section--dark .btn--primary {
+  background-color: var(--primary-red);
+  color: var(--white);
+  border-color: var(--primary-red);
+}
+
+.cta-section--dark .btn--primary:hover {
+  background-color: var(--primary-red-hover);
+  border-color: var(--primary-red-hover);
+}
+
+
+/* ===========================================
+   SERVICE CARDS GRID
+   =========================================== */
+.services-grid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: all var(--transition-normal);
+}
+
+.service-card:hover {
+  border-color: var(--primary-red);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.service-card__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--space-4);
+  color: var(--primary-red);
+}
+
+.service-card__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-3);
+}
+
+.service-card__description {
+  color: var(--medium-gray);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.service-card__link {
+  font-weight: var(--font-semibold);
+  font-size: var(--text-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.service-card__link svg {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--transition-fast);
+}
+
+.service-card:hover .service-card__link svg {
+  transform: translateX(4px);
+}
+
+
+/* ===========================================
+   TESTIMONIALS
+   =========================================== */
+.testimonial {
+  background-color: var(--light-gray);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  position: relative;
+}
+
+.testimonial__quote {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--dark-gray);
+  margin-bottom: var(--space-6);
+  font-style: italic;
+}
+
+.testimonial__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.testimonial__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.testimonial__name {
+  font-weight: var(--font-semibold);
+  color: var(--dark-gray);
+}
+
+.testimonial__title {
+  font-size: var(--text-sm);
+  color: var(--medium-gray);
+}
+
+.testimonial__icon {
+  position: absolute;
+  top: var(--space-6);
+  right: var(--space-6);
+  width: 40px;
+  height: 40px;
+  color: var(--primary-red);
+  opacity: 0.2;
+}
+
+
+/* ===========================================
+   PROCESS STEPS
+   =========================================== */
+.process {
+  display: grid;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .process {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+.process__step {
+  text-align: center;
+  position: relative;
+}
+
+.process__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-red);
+  color: var(--white);
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+}
+
+.process__title {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+}
+
+.process__description {
+  font-size: var(--text-sm);
+  color: var(--medium-gray);
+}
+
+@media (min-width: 768px) {
+  .process__step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: calc(50% + 30px);
+    width: calc(100% - 60px);
+    height: 2px;
+    background-color: var(--border-gray);
+  }
+}
+
+
+/* ===========================================
+   STATS / METRICS
+   =========================================== */
+.stats {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat {
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.stat__value {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  color: var(--primary-red);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.stat__label {
+  font-size: var(--text-sm);
+  color: var(--medium-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+/* ===========================================
+   UTILITY CLASSES
+   =========================================== */
+
+/* Text Alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Colors */
+.text-primary { color: var(--primary-red); }
+.text-muted { color: var(--medium-gray); }
+.text-white { color: var(--white); }
+.bg-light { background-color: var(--light-gray); }
+.bg-dark { background-color: var(--black); }
+.bg-white { background-color: var(--white); }
+
+/* Spacing */
+.mt-0 { margin-top: 0; }
+.mt-4 { margin-top: var(--space-4); }
+.mt-8 { margin-top: var(--space-8); }
+.mb-0 { margin-bottom: 0; }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-8 { margin-bottom: var(--space-8); }
+.my-8 { margin-top: var(--space-8); margin-bottom: var(--space-8); }
+.py-8 { padding-top: var(--space-8); padding-bottom: var(--space-8); }
+
+/* Display */
+.hidden { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+@media (min-width: 768px) {
+  .md\:hidden { display: none; }
+  .md\:block { display: block; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden { display: none; }
+  .lg\:block { display: block; }
+}
+
+/* Width */
+.w-full { width: 100%; }
+.max-w-prose { max-width: 65ch; }
+
+/* Visibility for Screen Readers Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="header__logo">
+          <img src="https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png" alt="Rack Storage Solutions" width="200" height="50">
+        </a>
+        <nav class="nav">
+          <a href="/" class="nav__link">Home</a>
+          <div class="nav__dropdown">
+            <a href="/services.html" class="nav__link">Services</a>
+            <div class="nav__dropdown-menu">
+              <a href="/services/heavy-duty-pallet-racking.html" class="nav__dropdown-link">Pallet Racking</a>
+              <a href="/services/used-pallet-rack.html" class="nav__dropdown-link">Used Rack</a>
+              <a href="/services/warehouse-design-layout.html" class="nav__dropdown-link">Warehouse Design</a>
+              <a href="/services/shelving-systems.html" class="nav__dropdown-link">Shelving</a>
+              <a href="/services/warehouse-installation-teardown.html" class="nav__dropdown-link">Installation</a>
+              <a href="/services/warehouse-relocation.html" class="nav__dropdown-link">Relocation</a>
+              <a href="/services/permitting-engineering.html" class="nav__dropdown-link">Permitting</a>
+              <a href="/services/rack-safety-inspections.html" class="nav__dropdown-link">Safety Inspections</a>
+            </div>
+          </div>
+          <div class="nav__dropdown">
+            <a href="/industries.html" class="nav__link">Industries</a>
+            <div class="nav__dropdown-menu">
+              <a href="/industries/3pl-logistics.html" class="nav__dropdown-link">3PL & Logistics</a>
+              <a href="/industries/manufacturing.html" class="nav__dropdown-link">Manufacturing</a>
+              <a href="/industries/ecommerce.html" class="nav__dropdown-link">E-Commerce</a>
+              <a href="/industries/cold-storage.html" class="nav__dropdown-link">Cold Storage</a>
+              <a href="/industries/retail.html" class="nav__dropdown-link">Retail</a>
+            </div>
+          </div>
+          <a href="/about.html" class="nav__link">About</a>
+          <a href="/resources/faq.html" class="nav__link">FAQ</a>
+        </nav>
+        <div class="header__cta hidden lg:block">
+          <a href="/contact.html" class="btn btn--primary">Get a Quote</a>
+        </div>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="/" class="mobile-nav__link">Home</a>
+    <a href="/services.html" class="mobile-nav__link">Services</a>
+    <a href="/industries.html" class="mobile-nav__link">Industries</a>
+    <a href="/about.html" class="mobile-nav__link">About</a>
+    <a href="/resources/faq.html" class="mobile-nav__link">FAQ</a>
+    <a href="/contact.html" class="mobile-nav__link">Contact</a>
+    <div style="padding-top: 1.5rem;">
+      <a href="/contact.html" class="btn btn--primary btn--full">Get a Quote</a>
+    </div>
+    <div style="padding-top: 1rem;">
+      <a href="tel:+18337772257" class="btn btn--secondary btn--full">Call (833) 777-2257</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.rackstoragesolutions.com/industries/retail/#service",
+  "name": "Warehouse Storage Solutions for Retail Distribution",
+  "description": "High-density pallet racking and shelving systems for retail distribution centers, featuring case pick optimization, store replenishment workflows, and high SKU variety support.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Rack Storage Solutions"
+  },
+  "serviceType": "Retail Distribution Center Storage",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rackstoragesolutions.com"},
+    {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://www.rackstoragesolutions.com/industries"},
+    {"@type": "ListItem", "position": 3, "name": "Retail Distribution", "item": "https://www.rackstoragesolutions.com/industries/retail"}
+  ]
+}
+</script>
+
+<!-- ============================================
+     BREADCRUMBS
+     ============================================ -->
+<nav class="breadcrumbs container" aria-label="Breadcrumb">
+  <div class="breadcrumbs__item">
+    <a href="/" class="breadcrumbs__link">Home</a>
+    <span class="breadcrumbs__separator">/</span>
+  </div>
+  <div class="breadcrumbs__item">
+    <a href="/industries" class="breadcrumbs__link">Industries</a>
+    <span class="breadcrumbs__separator">/</span>
+  </div>
+  <div class="breadcrumbs__item">
+    <span class="breadcrumbs__current">Retail Distribution</span>
+  </div>
+</nav>
+
+<!-- ============================================
+     HERO SECTION
+     ============================================ -->
+<section class="hero hero--light" style="padding: var(--space-12) 0;">
+  <div class="container">
+    <div class="grid grid--2" style="gap: var(--space-8); align-items: center;">
+      <div>
+        <h1>Warehouse Storage for Retail Distribution Centers</h1>
+        <p class="hero__subtitle" style="color: var(--medium-gray);">High-density storage with case pick optimization. Get product to stores efficiently with layouts designed for retail replenishment.</p>
+        <div style="margin-top: var(--space-6);">
+          <a href="/contact" class="btn btn--primary btn--lg">Get Your Free Quote</a>
+        </div>
+      </div>
+      <div>
+        <img src="/images/industries/retail-hero.jpg" alt="Retail distribution center with high-density pallet racking" style="border-radius: var(--radius-lg);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     DIRECT ANSWER BLOCK
+     ============================================ -->
+<section class="section" style="padding-top: var(--space-8); padding-bottom: var(--space-4);">
+  <div class="container">
+    <div class="answer-block">
+      <p><strong>Retail distribution centers</strong> face a unique challenge: storing thousands of SKUs at the pallet level while simultaneously picking cases for individual store orders. We design hybrid storage systems that combine high-density bulk reserve with efficient case pick modules—layouts optimized for the store replenishment workflows that keep retail shelves stocked.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     RETAIL DC CHALLENGES
+     ============================================ -->
+<section class="section">
+  <div class="container">
+    <h2 class="text-center" style="margin-bottom: var(--space-10);">Retail Distribution Challenges</h2>
+
+    <div class="grid grid--3" style="gap: var(--space-6);">
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">High SKU Variety</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Retail assortments mean thousands of products in one facility—everything from small accessories to furniture.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Case Pick Volume</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Most retail replenishment happens at the case level, not full pallets. Picking speed directly impacts labor costs.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Store-Ready Shipping</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Many operations require department-segregated or store-planogram-sequenced orders for efficient restocking.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Seasonal Peaks</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Holiday, back-to-school, and promotional surges require capacity flexibility beyond everyday operations.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Cross-Dock Operations</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Some products flow through without storage. DC layouts must support both storage and flow-through efficiently.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">E-Commerce Integration</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Many retail DCs now fulfill online orders alongside store replenishment—different workflows in one building.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     STORAGE CONFIGURATIONS
+     ============================================ -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="text-center" style="margin-bottom: var(--space-10);">Storage Systems for Retail Distribution</h2>
+
+    <div class="grid grid--2" style="gap: var(--space-8);">
+      <!-- Selective Reserve -->
+      <div class="card" style="padding: var(--space-6);">
+        <h3 style="color: var(--primary-red); margin-bottom: var(--space-4);">Selective Pallet Reserve</h3>
+        <p>The foundation of most retail DCs. Direct access to every pallet position supports diverse SKU profiles and flexible inventory management.</p>
+        <ul style="color: var(--medium-gray); margin-top: var(--space-4);">
+          <li>100% selectivity for any SKU, any time</li>
+          <li>Easy reconfiguration as assortments change</li>
+          <li>Vertical storage maximizes building cube</li>
+          <li>Compatible with standard lift equipment</li>
+        </ul>
+        <p style="font-size: var(--text-sm); color: var(--medium-gray); margin-top: var(--space-4);"><strong>Best for:</strong> Bulk reserve storage, high-SKU variety, receiving staging</p>
+      </div>
+
+      <!-- Case Flow -->
+      <div class="card" style="padding: var(--space-6);">
+        <h3 style="color: var(--primary-red); margin-bottom: var(--space-4);">Carton Flow Pick Modules</h3>
+        <p>Gravity-fed case pick lanes where product automatically advances as cases are picked. The most efficient configuration for high-volume case picking.</p>
+        <ul style="color: var(--medium-gray); margin-top: var(--space-4);">
+          <li>Cases roll forward automatically (FIFO)</li>
+          <li>Multiple pick faces in vertical stack</li>
+          <li>Reduces picker walk time dramatically</li>
+          <li>Integrates with conveyor takeaway</li>
+        </ul>
+        <p style="font-size: var(--text-sm); color: var(--medium-gray); margin-top: var(--space-4);"><strong>Best for:</strong> High-velocity case picks, store replenishment, fast-moving SKUs</p>
+      </div>
+
+      <!-- Pallet Flow -->
+      <div class="card" style="padding: var(--space-6);">
+        <h3 style="color: var(--primary-red); margin-bottom: var(--space-4);">Pallet Flow for Full-Case</h3>
+        <p>When full pallets feed case pick areas. Pallets flow forward on gravity rollers as front pallets are depleted.</p>
+        <ul style="color: var(--medium-gray); margin-top: var(--space-4);">
+          <li>FIFO rotation for date-sensitive goods</li>
+          <li>Automatic replenishment presentation</li>
+          <li>Separates replenishment from picking aisles</li>
+          <li>High-volume, consistent SKU support</li>
+        </ul>
+        <p style="font-size: var(--text-sm); color: var(--medium-gray); margin-top: var(--space-4);"><strong>Best for:</strong> High-velocity items, food/beverage retail, automated replenishment</p>
+      </div>
+
+      <!-- Pick to Belt -->
+      <div class="card" style="padding: var(--space-6);">
+        <h3 style="color: var(--primary-red); margin-bottom: var(--space-4);">Pick-to-Belt Systems</h3>
+        <p>Integrated pick modules with conveyor running through the center. Pickers place cases directly on the belt for sortation.</p>
+        <ul style="color: var(--medium-gray); margin-top: var(--space-4);">
+          <li>Eliminates cart handling</li>
+          <li>Cases flow directly to sortation</li>
+          <li>Works with zone picking strategies</li>
+          <li>High throughput per labor hour</li>
+        </ul>
+        <p style="font-size: var(--text-sm); color: var(--medium-gray); margin-top: var(--space-4);"><strong>Best for:</strong> High-volume DCs, multi-store orders, automated sortation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     HYBRID LAYOUTS
+     ============================================ -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid--2" style="gap: var(--space-12); align-items: center;">
+      <div>
+        <h2>Hybrid Storage & Pick Layouts</h2>
+        <p>Retail DCs rarely use just one storage type. The most efficient facilities combine bulk reserve storage with dedicated pick modules—and we design layouts that integrate both seamlessly.</p>
+
+        <div style="margin-top: var(--space-6);">
+          <div style="margin-bottom: var(--space-5);">
+            <h4 style="color: var(--primary-red); margin-bottom: var(--space-2);">Reserve/Forward Configuration</h4>
+            <p style="margin: 0; color: var(--medium-gray);">Bulk inventory in high-density reserve areas feeds forward pick locations. Replenishment paths designed for efficiency.</p>
+          </div>
+
+          <div style="margin-bottom: var(--space-5);">
+            <h4 style="color: var(--primary-red); margin-bottom: var(--space-2);">Velocity-Based Zoning</h4>
+            <p style="margin: 0; color: var(--medium-gray);">Fast movers in carton flow. Medium velocity in static pick. Slow movers picked from reserve. Slotting matched to movement.</p>
+          </div>
+
+          <div style="margin-bottom: var(--space-5);">
+            <h4 style="color: var(--primary-red); margin-bottom: var(--space-2);">Department Clustering</h4>
+            <p style="margin: 0; color: var(--medium-gray);">Storage organized by store department or category for efficient store-ready order building.</p>
+          </div>
+
+          <div>
+            <h4 style="color: var(--primary-red); margin-bottom: var(--space-2);">Cross-Dock Integration</h4>
+            <p style="margin: 0; color: var(--medium-gray);">Clear staging lanes and flow paths for products that ship through without storage.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="/images/industries/retail-layout.jpg" alt="Retail DC layout with hybrid storage and pick areas" style="border-radius: var(--radius-lg);" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SPECIAL CONSIDERATIONS
+     ============================================ -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="text-center" style="margin-bottom: var(--space-10);">Special Retail DC Considerations</h2>
+
+    <div class="grid grid--3" style="gap: var(--space-6);">
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Conveyor Integration</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Rack positions planned around conveyor routing. Induction points, takeaway lanes, and merge points factored into design.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Mezzanine Pick Levels</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Elevated pick platforms above pallet storage multiply case pick faces in the same footprint.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Sortation Staging</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Lanes and accumulation areas for store-specific order consolidation before shipping.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Returns Processing</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Dedicated areas for retail returns inspection, reconditioning, and put-back to stock.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Security Caging</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Wire partition areas for high-value or high-shrink merchandise requiring controlled access.</p>
+      </div>
+      <div class="card--feature">
+        <h4 style="margin-bottom: var(--space-2);">Seasonal Flex Space</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Areas designed to convert between bulk storage and overflow pick locations for peak seasons.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     OMNICHANNEL SECTION
+     ============================================ -->
+<section class="section">
+  <div class="container container--narrow">
+    <div class="text-center" style="margin-bottom: var(--space-8);">
+      <h2>Supporting Omnichannel Operations</h2>
+      <p class="lead">Today's retail DCs often fulfill stores and e-commerce from the same building—but with very different workflows.</p>
+    </div>
+
+    <div class="grid grid--2" style="gap: var(--space-6);">
+      <div class="card" style="padding: var(--space-5); border-left: 4px solid var(--primary-red);">
+        <h4 style="margin-bottom: var(--space-2);">Store Replenishment</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Case-level picks, department grouping, pallet building, scheduled shipments. Optimized for efficient truck loading to store network.</p>
+      </div>
+      <div class="card" style="padding: var(--space-5); border-left: 4px solid var(--primary-red);">
+        <h4 style="margin-bottom: var(--space-2);">E-Commerce Fulfillment</h4>
+        <p style="margin: 0; color: var(--medium-gray);">Each-level picks, individual order accuracy, pack station efficiency, carrier integration. Speed to customer matters most.</p>
+      </div>
+    </div>
+
+    <p style="margin-top: var(--space-6); color: var(--medium-gray); text-align: center;">We design layouts that support both workflows efficiently—shared reserve inventory feeding dedicated pick zones for each channel.</p>
+  </div>
+</section>
+
+<!-- ============================================
+     FAQ SECTION
+     ============================================ -->
+<section class="section bg-light">
+  <div class="container container--narrow">
+    <h2 class="text-center" style="margin-bottom: var(--space-8);">Retail Distribution Questions</h2>
+
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do we balance storage density with case pick efficiency?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>It's about right-sizing each zone. High-velocity items that get picked constantly go in low-density, high-accessibility carton flow where every second saved adds up. Slow-moving items can live in dense reserve storage and get picked directly or replenished to forward positions occasionally. The key is matching storage type to SKU velocity and pick frequency.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Should we use carton flow or static shelving for case picks?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Carton flow is more expensive but pays back quickly for high-velocity picks. Cases present automatically at the pick face, reducing reach time and ensuring FIFO. Static shelving works for slower items where the extra investment in flow doesn't pencil out. Most retail DCs use both—flow for top movers, static for the long tail of slower-moving SKUs.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do you handle seasonal assortment changes?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Flexibility is designed in. Selective rack with adjustable beams accommodates different product sizes. Forward pick locations can be re-slotted as assortments change. Some operations designate flex zones that convert between bulk storage and overflow picking during peak seasons. The goal is a system that adapts without major reconfiguration projects every season.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can rack be installed while the DC continues operations?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, with careful planning. We install in active DCs by working in phases—completing one zone while operations continue elsewhere. Off-hours and weekend work minimizes disruption. For major expansions, many retailers time installations around inventory dips (post-holiday, for example) when volume and density are lowest.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CTA SECTION
+     ============================================ -->
+<section class="cta-section">
+  <div class="container text-center">
+    <h2 class="cta-section__title">Ready to Optimize Your Retail DC?</h2>
+    <p class="cta-section__text">Let's design storage that supports efficient store replenishment and omnichannel fulfillment.</p>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="/contact" class="btn btn--primary btn--lg">Get Your Free Quote</a>
+      <a href="tel:+18337772257" class="btn btn--secondary btn--lg" style="background: transparent; color: white; border-color: white;">Call (833) 777-2257</a>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png" alt="Rack Storage Solutions" class="footer__logo" width="180" height="45">
+          <p class="footer__tagline">Your trusted partner for warehouse storage solutions. Serving businesses nationwide.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="/services/heavy-duty-pallet-racking.html" class="footer__link">Pallet Racking</a></li>
+            <li><a href="/services/used-pallet-rack.html" class="footer__link">Used Rack</a></li>
+            <li><a href="/services/warehouse-design-layout.html" class="footer__link">Warehouse Design</a></li>
+            <li><a href="/services/warehouse-installation-teardown.html" class="footer__link">Installation</a></li>
+            <li><a href="/services/warehouse-relocation.html" class="footer__link">Relocation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <ul class="footer__links">
+            <li><a href="/about.html" class="footer__link">About Us</a></li>
+            <li><a href="/industries.html" class="footer__link">Industries</a></li>
+            <li><a href="/resources/faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="/contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+18337772257" style="color: inherit;">(833) 777-2257</a>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="/contact.html" class="btn btn--primary btn--full">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Rack Storage Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var toggle = document.querySelector('.nav-toggle');
+      var mobileNav = document.querySelector('.mobile-nav');
+      if (toggle && mobileNav) {
+        toggle.addEventListener('click', function() {
+          var isOpen = mobileNav.classList.toggle('mobile-nav--open');
+          toggle.setAttribute('aria-expanded', isOpen);
+          document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+      }
+      // FAQ Accordion
+      var faqItems = document.querySelectorAll('.faq__item');
+      faqItems.forEach(function(item) {
+        var question = item.querySelector('.faq__question');
+        if (question) {
+          question.addEventListener('click', function() {
+            faqItems.forEach(function(other) {
+              if (other !== item) other.classList.remove('faq__item--open');
+            });
+            item.classList.toggle('faq__item--open');
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

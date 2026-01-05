@@ -1,0 +1,2293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warehouse Glossary | Rack Storage Solutions</title>
+  <meta name="description" content="Warehouse and racking terminology explained.">
+  <link rel="canonical" href="https://simpleleadsads-blip.github.io/rs-solutions-website/resources/glossary">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Warehouse Glossary | Rack Storage Solutions">
+  <meta property="og:description" content="Warehouse and racking terminology explained.">
+  <meta property="og:image" content="https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHZ0XZW8L3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XHZ0XZW8L3');
+    gtag('config', 'AW-17500834233');
+  </script>
+
+  <style>
+/* ============================================
+   RACK STORAGE SOLUTIONS - BRAND SYSTEM CSS
+   GHL-Compatible | Mobile-First | Production Ready
+   ============================================ */
+
+/* ===========================================
+   CSS CUSTOM PROPERTIES (Brand Variables)
+   =========================================== */
+:root {
+  /* Primary Colors */
+  --primary-red: #E63946;
+  --primary-red-hover: #C5303C;
+  --primary-red-light: rgba(230, 57, 70, 0.1);
+
+  /* Neutrals */
+  --black: #000000;
+  --white: #FFFFFF;
+  --dark-gray: #333333;
+  --medium-gray: #666666;
+  --light-gray: #F5F5F5;
+  --border-gray: #E0E0E0;
+
+  /* Functional Colors */
+  --success: #28A745;
+  --warning: #FFC107;
+  --error: #DC3545;
+  --info: #17A2B8;
+
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Sizes - Mobile First */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;      /* 4px */
+  --space-2: 0.5rem;       /* 8px */
+  --space-3: 0.75rem;      /* 12px */
+  --space-4: 1rem;         /* 16px */
+  --space-5: 1.25rem;      /* 20px */
+  --space-6: 1.5rem;       /* 24px */
+  --space-8: 2rem;         /* 32px */
+  --space-10: 2.5rem;      /* 40px */
+  --space-12: 3rem;        /* 48px */
+  --space-16: 4rem;        /* 64px */
+  --space-20: 5rem;        /* 80px */
+  --space-24: 6rem;        /* 96px */
+
+  /* Layout */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-max: 1400px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* Z-Index Scale */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-tooltip: 600;
+}
+
+
+/* ===========================================
+   RESET & BASE STYLES
+   =========================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+  color: var(--dark-gray);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--primary-red);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--primary-red-hover);
+}
+
+
+/* ===========================================
+   TYPOGRAPHY
+   =========================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: var(--black);
+  margin-bottom: var(--space-4);
+}
+
+h1 {
+  font-size: var(--text-3xl);
+}
+
+h2 {
+  font-size: var(--text-2xl);
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+
+h5, h6 {
+  font-size: var(--text-base);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--text-4xl);
+  }
+
+  h2 {
+    font-size: var(--text-3xl);
+  }
+
+  h3 {
+    font-size: var(--text-2xl);
+  }
+
+  h4 {
+    font-size: var(--text-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: var(--text-5xl);
+  }
+
+  h2 {
+    font-size: var(--text-4xl);
+  }
+}
+
+p {
+  margin-bottom: var(--space-4);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.lead {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--medium-gray);
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: var(--text-xl);
+  }
+}
+
+strong, b {
+  font-weight: var(--font-semibold);
+}
+
+small {
+  font-size: var(--text-sm);
+}
+
+
+/* ===========================================
+   LAYOUT COMPONENTS
+   =========================================== */
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}
+
+.container--narrow {
+  max-width: var(--container-md);
+}
+
+.container--wide {
+  max-width: var(--container-max);
+}
+
+/* Section Spacing */
+.section {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+  }
+}
+
+.section--sm {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.section--lg {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+
+@media (min-width: 768px) {
+  .section--lg {
+    padding-top: var(--space-24);
+    padding-bottom: var(--space-24);
+  }
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 { gap: var(--space-2); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+.gap-8 { gap: var(--space-8); }
+
+
+/* ===========================================
+   BUTTONS
+   =========================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--primary-red-light);
+}
+
+/* Primary Button - Red with white text */
+.btn--primary {
+  background-color: var(--primary-red);
+  color: var(--white);
+  border-color: var(--primary-red);
+}
+
+.btn--primary:hover {
+  background-color: var(--primary-red-hover);
+  border-color: var(--primary-red-hover);
+  color: var(--white);
+}
+
+/* Secondary Button - White with red border */
+.btn--secondary {
+  background-color: var(--white);
+  color: var(--primary-red);
+  border-color: var(--primary-red);
+}
+
+.btn--secondary:hover {
+  background-color: var(--primary-red);
+  color: var(--white);
+}
+
+/* Dark Button - Black background */
+.btn--dark {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.btn--dark:hover {
+  background-color: var(--dark-gray);
+  border-color: var(--dark-gray);
+  color: var(--white);
+}
+
+/* Ghost Button - Transparent */
+.btn--ghost {
+  background-color: transparent;
+  color: var(--dark-gray);
+  border-color: var(--border-gray);
+}
+
+.btn--ghost:hover {
+  background-color: var(--light-gray);
+  border-color: var(--dark-gray);
+}
+
+/* Button Sizes */
+.btn--sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.btn--lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-lg);
+}
+
+.btn--xl {
+  padding: var(--space-5) var(--space-10);
+  font-size: var(--text-xl);
+}
+
+/* Full Width Button */
+.btn--full {
+  width: 100%;
+}
+
+/* Button with Icon */
+.btn svg,
+.btn .icon {
+  width: 1.25em;
+  height: 1.25em;
+  flex-shrink: 0;
+}
+
+
+/* ===========================================
+   CARDS
+   =========================================== */
+.card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.card--interactive:hover {
+  transform: translateY(-4px);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: var(--space-6);
+}
+
+.card__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-3);
+}
+
+.card__text {
+  color: var(--medium-gray);
+  margin-bottom: var(--space-4);
+}
+
+/* Service Card Variant */
+.card--service {
+  border: 1px solid var(--border-gray);
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+}
+
+.card--service .card__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-4);
+  color: var(--primary-red);
+}
+
+/* Feature Card */
+.card--feature {
+  padding: var(--space-6);
+  border-left: 4px solid var(--primary-red);
+}
+
+
+/* ===========================================
+   FORMS
+   =========================================== */
+.form-group {
+  margin-bottom: var(--space-5);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--dark-gray);
+  margin-bottom: var(--space-2);
+}
+
+.form-label--required::after {
+  content: " *";
+  color: var(--primary-red);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  color: var(--dark-gray);
+  background-color: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-red);
+  box-shadow: 0 0 0 3px var(--primary-red-light);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--medium-gray);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23333' d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-3) center;
+  padding-right: var(--space-10);
+}
+
+.form-helper {
+  font-size: var(--text-sm);
+  color: var(--medium-gray);
+  margin-top: var(--space-1);
+}
+
+.form-error {
+  font-size: var(--text-sm);
+  color: var(--error);
+  margin-top: var(--space-1);
+}
+
+/* Checkbox & Radio */
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  cursor: pointer;
+}
+
+.form-check input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--primary-red);
+}
+
+
+/* ===========================================
+   HEADER / NAVIGATION
+   =========================================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  background-color: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+@media (min-width: 1024px) {
+  .header__inner {
+    height: 80px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  height: 40px;
+  width: auto;
+}
+
+@media (min-width: 1024px) {
+  .header__logo img {
+    height: 50px;
+  }
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+  }
+}
+
+.nav__link {
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  color: var(--dark-gray);
+  padding: var(--space-2) 0;
+  position: relative;
+}
+
+.nav__link:hover,
+.nav__link--active {
+  color: var(--primary-red);
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-red);
+  transition: width var(--transition-fast);
+}
+
+.nav__link:hover::after,
+.nav__link--active::after {
+  width: 100%;
+}
+
+/* Dropdown Menu */
+.nav__dropdown {
+  position: relative;
+}
+
+.nav__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 220px;
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-3) 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-fast), visibility var(--transition-fast);
+}
+
+.nav__dropdown:hover .nav__dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__dropdown-link {
+  display: block;
+  padding: var(--space-3) var(--space-5);
+  color: var(--dark-gray);
+  font-size: var(--text-sm);
+}
+
+.nav__dropdown-link:hover {
+  background-color: var(--light-gray);
+  color: var(--primary-red);
+}
+
+/* Mobile Menu Toggle */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark-gray);
+  transition: transform var(--transition-fast);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--white);
+  padding: var(--space-6);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  overflow-y: auto;
+  z-index: var(--z-fixed);
+}
+
+.mobile-nav--open {
+  transform: translateX(0);
+}
+
+.mobile-nav__link {
+  display: block;
+  padding: var(--space-4) 0;
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  color: var(--dark-gray);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.mobile-nav__link:hover {
+  color: var(--primary-red);
+}
+
+
+/* ===========================================
+   HERO SECTIONS
+   =========================================== */
+.hero {
+  position: relative;
+  padding: var(--space-16) 0;
+  background-color: var(--black);
+  color: var(--white);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: var(--space-20) 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: var(--space-24) 0;
+  }
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.hero__content {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: 800px;
+}
+
+.hero__title {
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.hero__subtitle {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .hero__subtitle {
+    font-size: var(--text-xl);
+  }
+}
+
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .hero__cta {
+    flex-direction: row;
+  }
+}
+
+/* Hero Variant - Light */
+.hero--light {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.hero--light .hero__title {
+  color: var(--black);
+}
+
+.hero--light .hero__subtitle {
+  color: var(--medium-gray);
+}
+
+/* Hero Variant - Red Accent */
+.hero--accent {
+  background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
+}
+
+.hero--accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-red);
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  opacity: 0.1;
+}
+
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding-top: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-top: var(--space-16);
+  }
+}
+
+.footer__grid {
+  display: grid;
+  gap: var(--space-8);
+  padding-bottom: var(--space-10);
+}
+
+@media (min-width: 640px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+.footer__brand {
+  max-width: 300px;
+}
+
+.footer__logo {
+  height: 40px;
+  margin-bottom: var(--space-4);
+}
+
+.footer__tagline {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.footer__heading {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.footer__links {
+  list-style: none;
+}
+
+.footer__link {
+  display: block;
+  padding: var(--space-2) 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--primary-red);
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-3);
+}
+
+.footer__contact-item svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--primary-red);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-6) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--text-sm);
+}
+
+.footer__legal {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.footer__legal a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--text-sm);
+}
+
+.footer__legal a:hover {
+  color: var(--white);
+}
+
+
+/* ===========================================
+   DIRECT ANSWER BLOCK (AEO/GEO Optimized)
+   =========================================== */
+.answer-block {
+  background-color: var(--light-gray);
+  border-left: 4px solid var(--primary-red);
+  padding: var(--space-5) var(--space-6);
+  margin-bottom: var(--space-8);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.answer-block p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  margin-bottom: 0;
+}
+
+
+/* ===========================================
+   FAQ ACCORDION
+   =========================================== */
+.faq {
+  margin: var(--space-8) 0;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--space-5) 0;
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  text-align: left;
+  color: var(--dark-gray);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.faq__question:hover {
+  color: var(--primary-red);
+}
+
+.faq__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: transform var(--transition-normal);
+}
+
+.faq__item--open .faq__icon {
+  transform: rotate(180deg);
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-normal);
+}
+
+.faq__item--open .faq__answer {
+  max-height: 500px;
+}
+
+.faq__answer-inner {
+  padding-bottom: var(--space-5);
+  color: var(--medium-gray);
+}
+
+
+/* ===========================================
+   BREADCRUMBS
+   =========================================== */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) 0;
+  font-size: var(--text-sm);
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--medium-gray);
+}
+
+.breadcrumbs__link {
+  color: var(--medium-gray);
+}
+
+.breadcrumbs__link:hover {
+  color: var(--primary-red);
+}
+
+.breadcrumbs__separator {
+  color: var(--border-gray);
+}
+
+.breadcrumbs__current {
+  color: var(--dark-gray);
+  font-weight: var(--font-medium);
+}
+
+
+/* ===========================================
+   TRUST INDICATORS
+   =========================================== */
+.trust-bar {
+  background-color: var(--light-gray);
+  padding: var(--space-6) 0;
+}
+
+.trust-bar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .trust-bar__inner {
+    justify-content: space-between;
+    gap: var(--space-8);
+  }
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--medium-gray);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+}
+
+.trust-item__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-red);
+}
+
+
+/* ===========================================
+   CTA SECTIONS
+   =========================================== */
+.cta-section {
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: var(--space-12) 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta-section {
+    padding: var(--space-16) 0;
+  }
+}
+
+.cta-section__title {
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.cta-section__text {
+  max-width: 600px;
+  margin: 0 auto var(--space-6);
+  opacity: 0.9;
+}
+
+.cta-section .btn--primary {
+  background-color: var(--white);
+  color: var(--primary-red);
+  border-color: var(--white);
+}
+
+.cta-section .btn--primary:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+/* Dark CTA Variant */
+.cta-section--dark {
+  background-color: var(--black);
+}
+
+.cta-section--dark .btn--primary {
+  background-color: var(--primary-red);
+  color: var(--white);
+  border-color: var(--primary-red);
+}
+
+.cta-section--dark .btn--primary:hover {
+  background-color: var(--primary-red-hover);
+  border-color: var(--primary-red-hover);
+}
+
+
+/* ===========================================
+   SERVICE CARDS GRID
+   =========================================== */
+.services-grid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: all var(--transition-normal);
+}
+
+.service-card:hover {
+  border-color: var(--primary-red);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.service-card__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--space-4);
+  color: var(--primary-red);
+}
+
+.service-card__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-3);
+}
+
+.service-card__description {
+  color: var(--medium-gray);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.service-card__link {
+  font-weight: var(--font-semibold);
+  font-size: var(--text-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.service-card__link svg {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--transition-fast);
+}
+
+.service-card:hover .service-card__link svg {
+  transform: translateX(4px);
+}
+
+
+/* ===========================================
+   TESTIMONIALS
+   =========================================== */
+.testimonial {
+  background-color: var(--light-gray);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  position: relative;
+}
+
+.testimonial__quote {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--dark-gray);
+  margin-bottom: var(--space-6);
+  font-style: italic;
+}
+
+.testimonial__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.testimonial__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.testimonial__name {
+  font-weight: var(--font-semibold);
+  color: var(--dark-gray);
+}
+
+.testimonial__title {
+  font-size: var(--text-sm);
+  color: var(--medium-gray);
+}
+
+.testimonial__icon {
+  position: absolute;
+  top: var(--space-6);
+  right: var(--space-6);
+  width: 40px;
+  height: 40px;
+  color: var(--primary-red);
+  opacity: 0.2;
+}
+
+
+/* ===========================================
+   PROCESS STEPS
+   =========================================== */
+.process {
+  display: grid;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .process {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+.process__step {
+  text-align: center;
+  position: relative;
+}
+
+.process__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-red);
+  color: var(--white);
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+}
+
+.process__title {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+}
+
+.process__description {
+  font-size: var(--text-sm);
+  color: var(--medium-gray);
+}
+
+@media (min-width: 768px) {
+  .process__step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: calc(50% + 30px);
+    width: calc(100% - 60px);
+    height: 2px;
+    background-color: var(--border-gray);
+  }
+}
+
+
+/* ===========================================
+   STATS / METRICS
+   =========================================== */
+.stats {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat {
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.stat__value {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  color: var(--primary-red);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.stat__label {
+  font-size: var(--text-sm);
+  color: var(--medium-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+/* ===========================================
+   UTILITY CLASSES
+   =========================================== */
+
+/* Text Alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Colors */
+.text-primary { color: var(--primary-red); }
+.text-muted { color: var(--medium-gray); }
+.text-white { color: var(--white); }
+.bg-light { background-color: var(--light-gray); }
+.bg-dark { background-color: var(--black); }
+.bg-white { background-color: var(--white); }
+
+/* Spacing */
+.mt-0 { margin-top: 0; }
+.mt-4 { margin-top: var(--space-4); }
+.mt-8 { margin-top: var(--space-8); }
+.mb-0 { margin-bottom: 0; }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-8 { margin-bottom: var(--space-8); }
+.my-8 { margin-top: var(--space-8); margin-bottom: var(--space-8); }
+.py-8 { padding-top: var(--space-8); padding-bottom: var(--space-8); }
+
+/* Display */
+.hidden { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+@media (min-width: 768px) {
+  .md\:hidden { display: none; }
+  .md\:block { display: block; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden { display: none; }
+  .lg\:block { display: block; }
+}
+
+/* Width */
+.w-full { width: 100%; }
+.max-w-prose { max-width: 65ch; }
+
+/* Visibility for Screen Readers Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="header__logo">
+          <img src="https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png" alt="Rack Storage Solutions" width="200" height="50">
+        </a>
+        <nav class="nav">
+          <a href="/" class="nav__link">Home</a>
+          <div class="nav__dropdown">
+            <a href="/services.html" class="nav__link">Services</a>
+            <div class="nav__dropdown-menu">
+              <a href="/services/heavy-duty-pallet-racking.html" class="nav__dropdown-link">Pallet Racking</a>
+              <a href="/services/used-pallet-rack.html" class="nav__dropdown-link">Used Rack</a>
+              <a href="/services/warehouse-design-layout.html" class="nav__dropdown-link">Warehouse Design</a>
+              <a href="/services/shelving-systems.html" class="nav__dropdown-link">Shelving</a>
+              <a href="/services/warehouse-installation-teardown.html" class="nav__dropdown-link">Installation</a>
+              <a href="/services/warehouse-relocation.html" class="nav__dropdown-link">Relocation</a>
+              <a href="/services/permitting-engineering.html" class="nav__dropdown-link">Permitting</a>
+              <a href="/services/rack-safety-inspections.html" class="nav__dropdown-link">Safety Inspections</a>
+            </div>
+          </div>
+          <div class="nav__dropdown">
+            <a href="/industries.html" class="nav__link">Industries</a>
+            <div class="nav__dropdown-menu">
+              <a href="/industries/3pl-logistics.html" class="nav__dropdown-link">3PL & Logistics</a>
+              <a href="/industries/manufacturing.html" class="nav__dropdown-link">Manufacturing</a>
+              <a href="/industries/ecommerce.html" class="nav__dropdown-link">E-Commerce</a>
+              <a href="/industries/cold-storage.html" class="nav__dropdown-link">Cold Storage</a>
+              <a href="/industries/retail.html" class="nav__dropdown-link">Retail</a>
+            </div>
+          </div>
+          <a href="/about.html" class="nav__link">About</a>
+          <a href="/resources/faq.html" class="nav__link">FAQ</a>
+        </nav>
+        <div class="header__cta hidden lg:block">
+          <a href="/contact.html" class="btn btn--primary">Get a Quote</a>
+        </div>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="/" class="mobile-nav__link">Home</a>
+    <a href="/services.html" class="mobile-nav__link">Services</a>
+    <a href="/industries.html" class="mobile-nav__link">Industries</a>
+    <a href="/about.html" class="mobile-nav__link">About</a>
+    <a href="/resources/faq.html" class="mobile-nav__link">FAQ</a>
+    <a href="/contact.html" class="mobile-nav__link">Contact</a>
+    <div style="padding-top: 1.5rem;">
+      <a href="/contact.html" class="btn btn--primary btn--full">Get a Quote</a>
+    </div>
+    <div style="padding-top: 1rem;">
+      <a href="tel:+18337772257" class="btn btn--secondary btn--full">Call (833) 777-2257</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "https://www.rackstoragesolutions.com/resources/glossary/#glossary",
+  "name": "Warehouse Storage Glossary",
+  "description": "Comprehensive glossary of warehouse storage and pallet racking terminology.",
+  "url": "https://www.rackstoragesolutions.com/resources/glossary",
+  "inDefinedTermSet": [
+    {"@type": "DefinedTerm", "name": "Selective Rack", "description": "The most common type of pallet racking that provides direct access to every pallet position."},
+    {"@type": "DefinedTerm", "name": "Drive-In Rack", "description": "High-density racking system where forklifts drive into the rack structure to store pallets multiple positions deep."},
+    {"@type": "DefinedTerm", "name": "Push-Back Rack", "description": "Dynamic storage system using nested carts on inclined rails, allowing pallets to push back and roll forward."},
+    {"@type": "DefinedTerm", "name": "Cantilever Rack", "description": "Open-front racking with horizontal arms extending from vertical columns, designed for long or bulky items."},
+    {"@type": "DefinedTerm", "name": "Upright Frame", "description": "The vertical component of pallet racking that supports horizontal beams and provides the structural foundation."},
+    {"@type": "DefinedTerm", "name": "Beam", "description": "Horizontal load-bearing member that connects upright frames and supports pallets or decking."}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rackstoragesolutions.com"},
+    {"@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.rackstoragesolutions.com/resources"},
+    {"@type": "ListItem", "position": 3, "name": "Glossary", "item": "https://www.rackstoragesolutions.com/resources/glossary"}
+  ]
+}
+</script>
+
+<!-- ============================================
+     BREADCRUMBS
+     ============================================ -->
+<nav class="breadcrumbs container" aria-label="Breadcrumb">
+  <div class="breadcrumbs__item">
+    <a href="/" class="breadcrumbs__link">Home</a>
+    <span class="breadcrumbs__separator">/</span>
+  </div>
+  <div class="breadcrumbs__item">
+    <a href="/resources" class="breadcrumbs__link">Resources</a>
+    <span class="breadcrumbs__separator">/</span>
+  </div>
+  <div class="breadcrumbs__item">
+    <span class="breadcrumbs__current">Glossary</span>
+  </div>
+</nav>
+
+<!-- ============================================
+     HERO SECTION
+     ============================================ -->
+<section class="section" style="padding-bottom: var(--space-8);">
+  <div class="container">
+    <div style="max-width: 800px;">
+      <h1>Warehouse Storage Glossary</h1>
+      <p class="lead">Learn the terminology of pallet racking and warehouse storage. From rack components to industry terms, here's your reference guide.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     QUICK NAVIGATION
+     ============================================ -->
+<section class="section" style="padding-top: 0; padding-bottom: var(--space-6);">
+  <div class="container">
+    <div class="card" style="padding: var(--space-4); background: var(--light-gray);">
+      <p style="margin: 0; font-weight: 600;">Jump to section:</p>
+      <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-3);">
+        <a href="#racking-types" class="btn btn--ghost" style="padding: var(--space-2) var(--space-3); font-size: var(--text-sm);">Racking Types</a>
+        <a href="#components" class="btn btn--ghost" style="padding: var(--space-2) var(--space-3); font-size: var(--text-sm);">Components</a>
+        <a href="#measurements" class="btn btn--ghost" style="padding: var(--space-2) var(--space-3); font-size: var(--text-sm);">Measurements</a>
+        <a href="#operations" class="btn btn--ghost" style="padding: var(--space-2) var(--space-3); font-size: var(--text-sm);">Operations</a>
+        <a href="#safety" class="btn btn--ghost" style="padding: var(--space-2) var(--space-3); font-size: var(--text-sm);">Safety</a>
+        <a href="#industry" class="btn btn--ghost" style="padding: var(--space-2) var(--space-3); font-size: var(--text-sm);">Industry Terms</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     RACKING TYPES
+     ============================================ -->
+<section id="racking-types" class="section" style="padding-top: var(--space-6);">
+  <div class="container">
+    <h2>Racking Types</h2>
+
+    <div class="glossary-list">
+      <div class="glossary-term">
+        <h3>Selective Rack (Selective Pallet Rack)</h3>
+        <p>The most common type of pallet racking system. Provides direct access to every pallet position from the aisle. Ideal for operations with diverse SKUs that require individual pallet accessibility. Available in roll-formed (bolted) and structural (welded) configurations.</p>
+        <p><em>Related: <a href="/services/heavy-duty-pallet-racking">Heavy Duty Pallet Racking</a></em></p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Drive-In Rack</h3>
+        <p>A high-density storage system where forklifts enter the racking structure to place pallets on rails multiple positions deep. Best for high-volume, low-SKU inventory where LIFO (Last In, First Out) inventory rotation is acceptable. Can increase storage density by 75% compared to selective rack.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Drive-Through Rack</h3>
+        <p>Similar to drive-in rack but accessible from both ends, allowing FIFO (First In, First Out) inventory flow. Forklifts can enter from either side of the rack structure. Less dense than drive-in but provides better inventory rotation.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Push-Back Rack</h3>
+        <p>A dynamic storage system using nested carts on inclined rails. Pallets are loaded from the front aisle; each new pallet pushes the previous ones back. When retrieved, remaining pallets roll forward. Provides high density with LIFO rotation while maintaining aisle accessibility.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Pallet Flow Rack (Gravity Flow Rack)</h3>
+        <p>A dynamic system where pallets are loaded at the back and flow forward on roller conveyors or wheels. Provides automatic FIFO rotation. Often used for date-sensitive inventory like food and beverage products.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Cantilever Rack</h3>
+        <p>A racking system with horizontal arms extending from vertical columns, providing an open front without vertical obstructions. Designed for long, bulky, or irregularly shaped items like lumber, pipes, furniture, and sheet goods.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Carton Flow Rack</h3>
+        <p>Similar to pallet flow but designed for cartons and cases rather than pallets. Uses tilted shelves with rollers or wheels to move products forward. Common in pick/pack operations for order fulfillment.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Double-Deep Rack</h3>
+        <p>Selective racking stored two pallets deep, accessed with a reach truck or double-deep forklift. Provides about 40% more storage than standard selective while maintaining reasonable accessibility. Second pallet position is blocked by the front pallet.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Structural Rack</h3>
+        <p>Pallet racking constructed from hot-rolled structural steel shapes (C-channels, I-beams) with bolted connections. Heavier duty than roll-formed rack. Used in high-impact environments, cold storage, or where maximum durability is required.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Roll-Formed Rack</h3>
+        <p>Pallet racking constructed from cold-rolled steel formed into specific profiles. Lighter and less expensive than structural rack but still rated for substantial loads. The most common type of selective rack in warehouses.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Narrow Aisle (NA) Rack</h3>
+        <p>Racking systems designed for aisles of 8-10 feet, accessed by turret trucks or swing-reach trucks. Increases storage density compared to standard wide-aisle configurations while maintaining selectivity.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Very Narrow Aisle (VNA) Rack</h3>
+        <p>Racking systems with aisles as narrow as 5-6 feet, requiring specialized man-up or wire-guided turret trucks. Maximizes storage density in selective configurations. Often includes guide rails or wire guidance systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     COMPONENTS
+     ============================================ -->
+<section id="components" class="section bg-light">
+  <div class="container">
+    <h2>Rack Components</h2>
+
+    <div class="glossary-list">
+      <div class="glossary-term">
+        <h3>Upright Frame (Upright)</h3>
+        <p>The vertical component of pallet racking consisting of two columns connected by horizontal and diagonal bracing. Uprights provide the structural foundation and are typically anchored to the floor. Specified by height and depth.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Column</h3>
+        <p>The vertical posts that make up an upright frame. Columns feature a pattern of holes or slots (the "teardrop" or other profile) that accept beam connectors at various heights.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Beam (Load Beam, Step Beam, Box Beam)</h3>
+        <p>The horizontal load-bearing members that connect upright frames and support pallets or decking. Step beams have a ledge for wire decking support. Box beams are fully enclosed rectangles. Specified by length and capacity.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Beam Connector (Beam End Connector)</h3>
+        <p>The hardware at each end of a beam that connects to the upright column. Various profiles exist (teardrop, keystone, structural clip) that must match the upright's hole pattern. Includes safety clips or locks to prevent accidental dislodging.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Wire Deck (Wire Decking)</h3>
+        <p>Welded wire mesh panels that sit on beams to provide a solid support surface for pallets. Allows light penetration, sprinkler water flow, and visual inspection. Specified by dimensions and capacity.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Pallet Support (Pallet Support Bar)</h3>
+        <p>A crossbar that spans between front and back beams to provide additional pallet support, especially for undersized pallets or those with compromised bottom boards.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Row Spacer</h3>
+        <p>A horizontal member that connects back-to-back upright frames, maintaining proper spacing and adding structural rigidity to the rack system.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Shim (Shim Plate)</h3>
+        <p>Thin metal plates placed under upright baseplates to level the rack on uneven floors.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Baseplate (Footplate)</h3>
+        <p>The steel plate at the bottom of each column that distributes load to the floor and provides anchor bolt holes for securing the rack.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Anchor Bolt (Floor Anchor)</h3>
+        <p>Fasteners that secure rack baseplates to the concrete floor. Required by building codes in most jurisdictions. Various types include wedge anchors, drop-in anchors, and epoxy anchors.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Column Protector (Post Protector)</h3>
+        <p>A heavy-gauge steel guard installed around the bottom of rack columns to protect against forklift impact damage. Available in bolt-on or wrap-around styles.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>End-of-Aisle Guard (Row End Protector)</h3>
+        <p>A structural steel guard installed at the end of rack rows to protect against forklift collisions from cross aisles.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Frame Protector (Corner Guard)</h3>
+        <p>Protective devices installed on rack frames at floor level to absorb or deflect forklift impacts.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Safety Clip (Safety Pin, Beam Lock)</h3>
+        <p>A locking device that secures beam connectors to upright columns, preventing beams from being accidentally dislodged. Required by code in most applications.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Backstop (Pallet Stop)</h3>
+        <p>A bar or angle installed at the back of rack beams to prevent pallets from being pushed off the back, especially in back-to-back configurations.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Guide Rail</h3>
+        <p>Steel rails installed on the floor along the edge of rack aisles to guide forklifts and prevent them from hitting the rack structure. Common in narrow aisle and very narrow aisle applications.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Crossbar (Cross Brace)</h3>
+        <p>Horizontal bracing within an upright frame that connects the two columns for structural stability.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Diagonal Brace</h3>
+        <p>Diagonal bracing within an upright frame that provides structural rigidity and load distribution between columns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     MEASUREMENTS & SPECIFICATIONS
+     ============================================ -->
+<section id="measurements" class="section">
+  <div class="container">
+    <h2>Measurements & Specifications</h2>
+
+    <div class="glossary-list">
+      <div class="glossary-term">
+        <h3>Beam Capacity</h3>
+        <p>The maximum uniformly distributed load (UDL) a pair of beams can safely support, typically expressed in pounds per pair. Capacity varies by beam length, profile, and connection type. Always specified with a safety factor included.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Frame Capacity</h3>
+        <p>The maximum load an upright frame can support, determined by column gauge, frame depth, and height. Expressed in pounds per column or per frame.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Clear Height</h3>
+        <p>The vertical distance from the floor to the lowest overhead obstruction (typically roof trusses, sprinkler pipes, or lighting). Critical for determining maximum rack height.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Upright Height</h3>
+        <p>The overall height of an upright frame from baseplate to top. Selected based on clear height minus required clearances for fire sprinklers and lighting.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Upright Depth (Frame Depth)</h3>
+        <p>The front-to-back dimension of an upright frame. Standard depths range from 36" to 48" for most pallet rack applications. Depth is selected based on pallet depth plus required clearances.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Beam Length (Beam Span)</h3>
+        <p>The face-to-face measurement between uprights that a beam spans. Common lengths include 96", 108", and 144" for storing 2 or 3 pallets per bay.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Bay</h3>
+        <p>The space between two adjacent upright frames. A "bay" typically holds 2 or 3 pallets side by side depending on beam length and pallet width.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Level</h3>
+        <p>A horizontal storage position within a rack bay. A rack system with 4 levels of storage has 4 beam pairs where pallets can be stored.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Pallet Position</h3>
+        <p>A single storage location for one pallet. Used as the standard unit for describing warehouse capacity (e.g., "5,000 pallet positions").</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Aisle Width</h3>
+        <p>The clear distance between facing rack rows. Standard wide aisles are 10-13 feet for sit-down forklifts, 8-10 feet for reach trucks, and 5-6 feet for VNA equipment.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Flue Space</h3>
+        <p>The clear space between pallets or rack components required by fire codes for fire suppression effectiveness. Transverse flue is the side-to-side space between pallets; longitudinal flue is front-to-back space in back-to-back configurations.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Top of Steel (TOS)</h3>
+        <p>The elevation of the top beam level in a rack system. Measured from floor to the top surface of the highest beam. Must maintain required clearance to sprinklers.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Uniformly Distributed Load (UDL)</h3>
+        <p>A load that is evenly spread across the entire beam span. Beam capacities are typically rated for UDL conditions. Point loads or uneven loading reduce effective capacity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     OPERATIONS
+     ============================================ -->
+<section id="operations" class="section bg-light">
+  <div class="container">
+    <h2>Operations & Inventory</h2>
+
+    <div class="glossary-list">
+      <div class="glossary-term">
+        <h3>FIFO (First In, First Out)</h3>
+        <p>An inventory rotation method where the oldest inventory (first in) is picked and shipped first. Essential for perishable goods, date-coded products, and items with expiration dates. Achieved with selective rack, drive-through, or flow rack systems.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>LIFO (Last In, First Out)</h3>
+        <p>An inventory rotation method where the newest inventory (last in) is picked first. Acceptable for non-perishable goods with no expiration concerns. Drive-in and push-back rack systems operate on LIFO principles.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>SKU (Stock Keeping Unit)</h3>
+        <p>A unique identifier for each distinct product in inventory. The number of SKUs in a warehouse affects rack type selection—high-SKU operations typically require more selective access.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Cube Utilization</h3>
+        <p>The percentage of available warehouse cubic feet actually used for storage. High-density rack systems increase cube utilization compared to floor stacking or selective-only configurations.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Slotting</h3>
+        <p>The process of determining optimal storage locations for products based on pick frequency, size, weight, and other factors. Proper slotting improves picking efficiency and reduces travel time.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Pick Face</h3>
+        <p>The location from which products are picked for orders. In pallet rack, typically the lowest level accessible without lifting equipment. In case pick operations, mid-level positions may serve as pick faces.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Bulk Storage</h3>
+        <p>High-volume storage of palletized goods, typically in upper rack levels. Replenishes pick face locations as inventory is depleted.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Cross-Docking</h3>
+        <p>A logistics practice where incoming goods are transferred directly to outbound shipping with minimal storage time. Reduces need for deep storage but may require staging areas.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Throughput</h3>
+        <p>The rate at which goods move through a warehouse, typically measured in pallets per hour or cases per hour. Rack type and layout significantly impact achievable throughput.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Turn Rate (Inventory Turns)</h3>
+        <p>The number of times inventory is completely sold and replaced in a given period (usually annually). High-turn operations may prioritize accessibility over density; low-turn operations may benefit from high-density storage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SAFETY & COMPLIANCE
+     ============================================ -->
+<section id="safety" class="section">
+  <div class="container">
+    <h2>Safety & Compliance</h2>
+
+    <div class="glossary-list">
+      <div class="glossary-term">
+        <h3>RMI (Rack Manufacturers Institute)</h3>
+        <p>The industry trade association that publishes specifications and guidelines for the design, testing, and use of industrial steel storage racks. RMI standards (ANSI MH16.1) are the basis for most rack engineering and permitting.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>ANSI MH16.1</h3>
+        <p>The American National Standards Institute standard for the design, testing, and utilization of industrial steel storage racks. Developed by RMI and referenced by building codes nationwide. Covers load application, seismic design, and safety requirements.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Seismic Design Category (SDC)</h3>
+        <p>A classification from A through F that defines seismic design requirements for structures based on location and building use. Higher categories require more robust rack connections, bracing, and engineering documentation.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>PE-Stamped Drawings (Engineered Drawings)</h3>
+        <p>Rack layout and structural drawings reviewed, approved, and stamped by a licensed Professional Engineer. Required for permits in many jurisdictions, especially in seismic zones.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Load Capacity Plaque (Capacity Placard)</h3>
+        <p>A sign posted on rack systems showing the rated load capacity per level, configuration, and any special loading requirements. Required by OSHA and most building codes.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Rack Safety Inspection</h3>
+        <p>A systematic examination of rack systems to identify damage, improper loading, missing components, or other safety hazards. ANSI MH16.1 recommends regular inspections by trained personnel.</p>
+        <p><em>Related: <a href="/services/rack-safety-inspections">Rack Safety Inspections</a></em></p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Damage Assessment</h3>
+        <p>The process of evaluating rack components after a forklift impact or other incident to determine if repair, replacement, or immediate unloading is required.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>In-Rack Sprinkler</h3>
+        <p>Fire suppression sprinkler heads installed within the rack structure at intermediate levels, rather than only at ceiling level. Often required for high-piled storage or certain commodity classifications.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>High-Piled Storage</h3>
+        <p>Storage of combustible materials above specific height thresholds (typically 12 feet), triggering additional fire code requirements including sprinkler upgrades, permits, and clearances.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Commodity Classification</h3>
+        <p>Fire code classification of stored goods based on combustibility and fire behavior. Classes range from Class I (non-combustible) through Class IV (free-burning combustibles), plus special high-hazard categories.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     INDUSTRY TERMS
+     ============================================ -->
+<section id="industry" class="section bg-light">
+  <div class="container">
+    <h2>Industry Terms</h2>
+
+    <div class="glossary-list">
+      <div class="glossary-term">
+        <h3>3PL (Third-Party Logistics)</h3>
+        <p>Companies that provide outsourced logistics and warehousing services. 3PL facilities often require flexible, reconfigurable rack systems to accommodate multiple clients with varying needs.</p>
+        <p><em>Related: <a href="/industries/3pl-logistics">3PL & Logistics Solutions</a></em></p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>WMS (Warehouse Management System)</h3>
+        <p>Software that controls and manages warehouse operations including receiving, putaway, picking, packing, and shipping. Rack layouts must be compatible with WMS location naming conventions.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>GMA Pallet</h3>
+        <p>The standard pallet size used in grocery and consumer goods industries, measuring 48" x 40". Named for the Grocery Manufacturers Association. Rack beam lengths are often designed around GMA pallet dimensions.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Stringer Pallet</h3>
+        <p>A pallet constructed with solid boards (stringers) running lengthwise between the top and bottom deck boards. Can only be lifted from two sides unless notched.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Block Pallet</h3>
+        <p>A pallet constructed with solid blocks at the corners and center, allowing four-way forklift access. Stronger than stringer pallets but more expensive.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Reach Truck</h3>
+        <p>A narrow-aisle forklift with a mast that extends forward to place or retrieve pallets. Designed for aisles as narrow as 8-10 feet. More maneuverable than sit-down forklifts.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Order Picker (Stock Picker)</h3>
+        <p>A lift truck where the operator rises with the forks to manually pick items from elevated rack locations. Common in case-pick and piece-pick operations.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Turret Truck (Swing-Reach Truck)</h3>
+        <p>A very narrow aisle forklift with forks that swing 90 degrees to either side, allowing it to pick from both sides of the aisle without turning. Used in VNA applications.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Man-Up Truck</h3>
+        <p>A narrow aisle lift truck where the operator compartment rises with the forks, providing visual confirmation of pallet placement at height.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Wire Guidance</h3>
+        <p>A navigation system using wires embedded in warehouse floors to guide VNA forklifts precisely down aisles. Prevents rack damage and allows higher travel speeds.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Teardrop</h3>
+        <p>The most common beam-to-column connection style, featuring teardrop-shaped holes in the column that accept corresponding connector tabs. Allows tool-free beam adjustment.</p>
+      </div>
+
+      <div class="glossary-term">
+        <h3>Cold Storage</h3>
+        <p>Temperature-controlled warehouse environments, including coolers (32-55°F) and freezers (below 32°F, often -10°F to -20°F). Requires corrosion-resistant rack finishes and specialized installation practices.</p>
+        <p><em>Related: <a href="/industries/cold-storage">Cold Storage Solutions</a></em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     RELATED RESOURCES
+     ============================================ -->
+<section class="section">
+  <div class="container">
+    <h2 class="text-center" style="margin-bottom: var(--space-8);">Related Resources</h2>
+    <div class="grid grid--3" style="gap: var(--space-6);">
+      <a href="/resources/faq" class="card card--interactive" style="text-decoration: none;">
+        <div class="card__body">
+          <h3 class="card__title">FAQ</h3>
+          <p class="card__text">Common questions about pallet racking, installation, and warehouse storage.</p>
+        </div>
+      </a>
+      <a href="/resources/racking-types-comparison" class="card card--interactive" style="text-decoration: none;">
+        <div class="card__body">
+          <h3 class="card__title">Racking Types Comparison</h3>
+          <p class="card__text">Compare selective, drive-in, push-back, and other rack types.</p>
+        </div>
+      </a>
+      <a href="/resources/new-vs-used-pallet-rack" class="card card--interactive" style="text-decoration: none;">
+        <div class="card__body">
+          <h3 class="card__title">New vs. Used Rack</h3>
+          <p class="card__text">Understand when new or used pallet rack is right for your project.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CTA SECTION
+     ============================================ -->
+<section class="cta-section">
+  <div class="container text-center">
+    <h2 class="cta-section__title">Have Questions About Racking?</h2>
+    <p class="cta-section__text">Our team can explain any of these terms in context for your specific project.</p>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="/contact" class="btn btn--primary btn--lg">Contact Our Team</a>
+      <a href="tel:+18337772257" class="btn btn--secondary btn--lg" style="background: transparent; color: white; border-color: white;">Call (833) 777-2257</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .glossary-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+  .glossary-term {
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--border-gray);
+  }
+  .glossary-term:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .glossary-term h3 {
+    color: var(--primary-red);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+  }
+  .glossary-term p {
+    color: var(--dark-gray);
+    margin-bottom: var(--space-2);
+  }
+  .glossary-term p:last-child {
+    margin-bottom: 0;
+  }
+  .glossary-term em {
+    font-size: var(--text-sm);
+    color: var(--medium-gray);
+  }
+</style>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png" alt="Rack Storage Solutions" class="footer__logo" width="180" height="45">
+          <p class="footer__tagline">Your trusted partner for warehouse storage solutions. Serving businesses nationwide.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="/services/heavy-duty-pallet-racking.html" class="footer__link">Pallet Racking</a></li>
+            <li><a href="/services/used-pallet-rack.html" class="footer__link">Used Rack</a></li>
+            <li><a href="/services/warehouse-design-layout.html" class="footer__link">Warehouse Design</a></li>
+            <li><a href="/services/warehouse-installation-teardown.html" class="footer__link">Installation</a></li>
+            <li><a href="/services/warehouse-relocation.html" class="footer__link">Relocation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <ul class="footer__links">
+            <li><a href="/about.html" class="footer__link">About Us</a></li>
+            <li><a href="/industries.html" class="footer__link">Industries</a></li>
+            <li><a href="/resources/faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="/contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+18337772257" style="color: inherit;">(833) 777-2257</a>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="/contact.html" class="btn btn--primary btn--full">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Rack Storage Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var toggle = document.querySelector('.nav-toggle');
+      var mobileNav = document.querySelector('.mobile-nav');
+      if (toggle && mobileNav) {
+        toggle.addEventListener('click', function() {
+          var isOpen = mobileNav.classList.toggle('mobile-nav--open');
+          toggle.setAttribute('aria-expanded', isOpen);
+          document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+      }
+      // FAQ Accordion
+      var faqItems = document.querySelectorAll('.faq__item');
+      faqItems.forEach(function(item) {
+        var question = item.querySelector('.faq__question');
+        if (question) {
+          question.addEventListener('click', function() {
+            faqItems.forEach(function(other) {
+              if (other !== item) other.classList.remove('faq__item--open');
+            });
+            item.classList.toggle('faq__item--open');
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
