@@ -2038,5 +2038,65 @@ small {
       });
     })();
   </script>
+
+  <!-- Anti-Bot Form Protection -->
+  <script>
+  (function(){
+    'use strict';
+    var RS_ANTI_BOT={
+      MIN_FORM_TIME:3000,
+      MAX_FORM_TIME:1800000,
+      HONEYPOT_FIELD:'website_url',
+      pageLoadTime:Date.now(),
+      mouseMovements:0,
+      keystrokes:0,
+      init:function(){
+        var self=this;
+        document.addEventListener('mousemove',function(){self.mouseMovements++},{passive:true});
+        document.addEventListener('keydown',function(){self.keystrokes++},{passive:true});
+        this.setupForms();
+      },
+      setupForms:function(){
+        var self=this;
+        document.querySelectorAll('form').forEach(function(form){
+          if(form.dataset.botProtected)return;
+          form.dataset.botProtected='true';
+          // Honeypot
+          var hp=document.createElement('div');
+          hp.style.cssText='position:absolute;left:-9999px;top:-9999px;height:0;width:0;overflow:hidden;';
+          hp.innerHTML='<label>Website URL</label><input type="text" name="'+self.HONEYPOT_FIELD+'" tabindex="-1" autocomplete="off">';
+          form.appendChild(hp);
+          // Timing
+          var tf=document.createElement('input');
+          tf.type='hidden';tf.name='_form_loaded';tf.value=Date.now().toString();
+          form.appendChild(tf);
+          // Validate
+          form.addEventListener('submit',function(e){
+            var honeypot=form.querySelector('[name="'+self.HONEYPOT_FIELD+'"]');
+            if(honeypot&&honeypot.value.length>0){
+              e.preventDefault();
+              if(typeof gtag!=='undefined')gtag('event','bot_detected',{'event_category':'security','event_label':'honeypot'});
+              return false;
+            }
+            var lf=form.querySelector('[name="_form_loaded"]');
+            if(lf){
+              var ft=Date.now()-parseInt(lf.value,10);
+              if(ft<self.MIN_FORM_TIME){
+                e.preventDefault();
+                alert('Please take a moment to review your submission.');
+                return false;
+              }
+            }
+            var js=document.createElement('input');
+            js.type='hidden';js.name='_js_verified';js.value='true';
+            form.appendChild(js);
+          });
+        });
+      }
+    };
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){RS_ANTI_BOT.init()});
+    else RS_ANTI_BOT.init();
+  })();
+  </script>
 </body>
 </html>
