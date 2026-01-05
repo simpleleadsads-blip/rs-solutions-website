@@ -117,39 +117,39 @@ def get_template(css_content):
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a href="/" class="header__logo">
+        <a href="/rs-solutions-website/" class="header__logo">
           <img src="https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png" alt="Rack Storage Solutions" width="200" height="50">
         </a>
         <nav class="nav">
-          <a href="/" class="nav__link">Home</a>
+          <a href="/rs-solutions-website/" class="nav__link">Home</a>
           <div class="nav__dropdown">
-            <a href="/services.html" class="nav__link">Services</a>
+            <a href="/rs-solutions-website/services.html" class="nav__link">Services</a>
             <div class="nav__dropdown-menu">
-              <a href="/services/heavy-duty-pallet-racking.html" class="nav__dropdown-link">Pallet Racking</a>
-              <a href="/services/used-pallet-rack.html" class="nav__dropdown-link">Used Rack</a>
-              <a href="/services/warehouse-design-layout.html" class="nav__dropdown-link">Warehouse Design</a>
-              <a href="/services/shelving-systems.html" class="nav__dropdown-link">Shelving</a>
-              <a href="/services/warehouse-installation-teardown.html" class="nav__dropdown-link">Installation</a>
-              <a href="/services/warehouse-relocation.html" class="nav__dropdown-link">Relocation</a>
-              <a href="/services/permitting-engineering.html" class="nav__dropdown-link">Permitting</a>
-              <a href="/services/rack-safety-inspections.html" class="nav__dropdown-link">Safety Inspections</a>
+              <a href="/rs-solutions-website/services/heavy-duty-pallet-racking.html" class="nav__dropdown-link">Pallet Racking</a>
+              <a href="/rs-solutions-website/services/used-pallet-rack.html" class="nav__dropdown-link">Used Rack</a>
+              <a href="/rs-solutions-website/services/warehouse-design-layout.html" class="nav__dropdown-link">Warehouse Design</a>
+              <a href="/rs-solutions-website/services/shelving-systems.html" class="nav__dropdown-link">Shelving</a>
+              <a href="/rs-solutions-website/services/warehouse-installation-teardown.html" class="nav__dropdown-link">Installation</a>
+              <a href="/rs-solutions-website/services/warehouse-relocation.html" class="nav__dropdown-link">Relocation</a>
+              <a href="/rs-solutions-website/services/permitting-engineering.html" class="nav__dropdown-link">Permitting</a>
+              <a href="/rs-solutions-website/services/rack-safety-inspections.html" class="nav__dropdown-link">Safety Inspections</a>
             </div>
           </div>
           <div class="nav__dropdown">
-            <a href="/industries.html" class="nav__link">Industries</a>
+            <a href="/rs-solutions-website/industries.html" class="nav__link">Industries</a>
             <div class="nav__dropdown-menu">
-              <a href="/industries/3pl-logistics.html" class="nav__dropdown-link">3PL & Logistics</a>
-              <a href="/industries/manufacturing.html" class="nav__dropdown-link">Manufacturing</a>
-              <a href="/industries/ecommerce.html" class="nav__dropdown-link">E-Commerce</a>
-              <a href="/industries/cold-storage.html" class="nav__dropdown-link">Cold Storage</a>
-              <a href="/industries/retail.html" class="nav__dropdown-link">Retail</a>
+              <a href="/rs-solutions-website/industries/3pl-logistics.html" class="nav__dropdown-link">3PL & Logistics</a>
+              <a href="/rs-solutions-website/industries/manufacturing.html" class="nav__dropdown-link">Manufacturing</a>
+              <a href="/rs-solutions-website/industries/ecommerce.html" class="nav__dropdown-link">E-Commerce</a>
+              <a href="/rs-solutions-website/industries/cold-storage.html" class="nav__dropdown-link">Cold Storage</a>
+              <a href="/rs-solutions-website/industries/retail.html" class="nav__dropdown-link">Retail</a>
             </div>
           </div>
-          <a href="/about.html" class="nav__link">About</a>
-          <a href="/resources/faq.html" class="nav__link">FAQ</a>
+          <a href="/rs-solutions-website/about.html" class="nav__link">About</a>
+          <a href="/rs-solutions-website/resources/faq.html" class="nav__link">FAQ</a>
         </nav>
         <div class="header__cta hidden lg:block">
-          <a href="/contact.html" class="btn btn--primary">Get a Quote</a>
+          <a href="/rs-solutions-website/contact.html" class="btn btn--primary">Get a Quote</a>
         </div>
         <button class="nav-toggle" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -160,14 +160,14 @@ def get_template(css_content):
 
   <!-- Mobile Nav -->
   <nav class="mobile-nav" id="mobile-nav">
-    <a href="/" class="mobile-nav__link">Home</a>
-    <a href="/services.html" class="mobile-nav__link">Services</a>
-    <a href="/industries.html" class="mobile-nav__link">Industries</a>
-    <a href="/about.html" class="mobile-nav__link">About</a>
-    <a href="/resources/faq.html" class="mobile-nav__link">FAQ</a>
-    <a href="/contact.html" class="mobile-nav__link">Contact</a>
+    <a href="/rs-solutions-website/" class="mobile-nav__link">Home</a>
+    <a href="/rs-solutions-website/services.html" class="mobile-nav__link">Services</a>
+    <a href="/rs-solutions-website/industries.html" class="mobile-nav__link">Industries</a>
+    <a href="/rs-solutions-website/about.html" class="mobile-nav__link">About</a>
+    <a href="/rs-solutions-website/resources/faq.html" class="mobile-nav__link">FAQ</a>
+    <a href="/rs-solutions-website/contact.html" class="mobile-nav__link">Contact</a>
     <div style="padding-top: 1.5rem;">
-      <a href="/contact.html" class="btn btn--primary btn--full">Get a Quote</a>
+      <a href="/rs-solutions-website/contact.html" class="btn btn--primary btn--full">Get a Quote</a>
     </div>
     <div style="padding-top: 1rem;">
       <a href="tel:+18337772257" class="btn btn--secondary btn--full">Call (833) 777-2257</a>
@@ -190,20 +190,20 @@ def get_template(css_content):
         <div>
           <h3 class="footer__heading">Services</h3>
           <ul class="footer__links">
-            <li><a href="/services/heavy-duty-pallet-racking.html" class="footer__link">Pallet Racking</a></li>
-            <li><a href="/services/used-pallet-rack.html" class="footer__link">Used Rack</a></li>
-            <li><a href="/services/warehouse-design-layout.html" class="footer__link">Warehouse Design</a></li>
-            <li><a href="/services/warehouse-installation-teardown.html" class="footer__link">Installation</a></li>
-            <li><a href="/services/warehouse-relocation.html" class="footer__link">Relocation</a></li>
+            <li><a href="/rs-solutions-website/services/heavy-duty-pallet-racking.html" class="footer__link">Pallet Racking</a></li>
+            <li><a href="/rs-solutions-website/services/used-pallet-rack.html" class="footer__link">Used Rack</a></li>
+            <li><a href="/rs-solutions-website/services/warehouse-design-layout.html" class="footer__link">Warehouse Design</a></li>
+            <li><a href="/rs-solutions-website/services/warehouse-installation-teardown.html" class="footer__link">Installation</a></li>
+            <li><a href="/rs-solutions-website/services/warehouse-relocation.html" class="footer__link">Relocation</a></li>
           </ul>
         </div>
         <div>
           <h3 class="footer__heading">Company</h3>
           <ul class="footer__links">
-            <li><a href="/about.html" class="footer__link">About Us</a></li>
-            <li><a href="/industries.html" class="footer__link">Industries</a></li>
-            <li><a href="/resources/faq.html" class="footer__link">FAQ</a></li>
-            <li><a href="/contact.html" class="footer__link">Contact</a></li>
+            <li><a href="/rs-solutions-website/about.html" class="footer__link">About Us</a></li>
+            <li><a href="/rs-solutions-website/industries.html" class="footer__link">Industries</a></li>
+            <li><a href="/rs-solutions-website/resources/faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="/rs-solutions-website/contact.html" class="footer__link">Contact</a></li>
           </ul>
         </div>
         <div>
@@ -213,7 +213,7 @@ def get_template(css_content):
             <a href="tel:+18337772257" style="color: inherit;">(833) 777-2257</a>
           </div>
           <div style="margin-top: 1rem;">
-            <a href="/contact.html" class="btn btn--primary btn--full">Request a Quote</a>
+            <a href="/rs-solutions-website/contact.html" class="btn btn--primary btn--full">Request a Quote</a>
           </div>
         </div>
       </div>
@@ -258,6 +258,16 @@ def strip_comments_and_meta(content):
     content = re.sub(r'^<!--[\s\S]*?-->\s*', '', content, count=1)
     return content.strip()
 
+def fix_internal_links(content):
+    """Prefix internal links with /rs-solutions-website for GitHub Pages."""
+    # Fix href="/..." links (but not href="/" alone or external links)
+    content = re.sub(r'href="/([^"]+)"', r'href="/rs-solutions-website/\1"', content)
+    # Fix href="/" (home link)
+    content = re.sub(r'href="/"', r'href="/rs-solutions-website/"', content)
+    # Add .html extension to internal links that don't have it (except anchors)
+    content = re.sub(r'href="/rs-solutions-website/([^"#]+)(?<!\.html)"', r'href="/rs-solutions-website/\1.html"', content)
+    return content
+
 def build_page(template, source_path, output_path, title, description, css_content):
     """Build a single page."""
     source_full = os.path.join(BASE_DIR, source_path)
@@ -270,6 +280,7 @@ def build_page(template, source_path, output_path, title, description, css_conte
     # Read and clean page content
     content = read_file(source_full)
     content = strip_comments_and_meta(content)
+    content = fix_internal_links(content)
 
     # Get canonical path (without .html for cleaner URLs)
     canonical = output_path.replace('.html', '') if output_path != 'index.html' else ''
