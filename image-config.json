@@ -2,7 +2,7 @@
   "images": {
     "hero-warehouse.jpg": "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
     "about-warehouse.jpg": "https://images.pexels.com/photos/4483773/pexels-photo-4483773.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-    "warehouse-team.jpg": "https://images.pexels.com/photos/4483614/pexels-photo-4483614.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+    "warehouse-team.jpg": "/rs-solutions-website/images/warehouse-team.jpg",
     "warehouse-overview.jpg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "multi-site-warehouse.jpg": "https://images.pexels.com/photos/4483609/pexels-photo-4483609.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "usa-coverage-map.svg": "https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
