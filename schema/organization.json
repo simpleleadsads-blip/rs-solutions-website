@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "LocalBusiness",
   "@id": "https://www.rackstoragesolutions.com/#organization",
   "name": "Rack Storage Solutions",
   "alternateName": "RS Solutions",
@@ -11,10 +11,11 @@
     "width": 400,
     "height": 100
   },
-  "image": "https://www.rackstoragesolutions.com/images/og-default.jpg",
+  "image": "https://storage.googleapis.com/msgsndr/7FWz2v6LvpUoGO3qQ2Xb/media/695b0f593ccdd60d510ce6a3.png",
   "description": "Rack Storage Solutions provides nationwide warehouse storage solutions including pallet racking, shelving systems, warehouse design, installation, and relocation services for businesses of all sizes.",
   "telephone": "+1-833-777-2257",
-  "email": "{{EMAIL_ADDRESS}}",
+  "email": "Sales@IneedRacks.com",
+  "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "1687 Timocuan Way Unit 113",
@@ -23,28 +24,30 @@
     "postalCode": "32750",
     "addressCountry": "US"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 28.7028,
+    "longitude": -81.3586
+  },
   "areaServed": {
     "@type": "Country",
     "name": "United States"
   },
-  "serviceArea": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": 39.8283,
-      "longitude": -98.5795
-    },
-    "geoRadius": "3000 mi"
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "47",
+    "bestRating": "5"
   },
   "sameAs": [
-    "{{FACEBOOK_URL}}",
-    "{{LINKEDIN_URL}}",
-    "{{YOUTUBE_URL}}"
+    "https://youtube.com/racksdirect",
+    "https://instagram.com/Racksdirect",
+    "https://facebook.com/racksdirect"
   ],
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+1-833-777-2257",
+      "telephone": "+1-407-920-3747",
       "contactType": "sales",
       "areaServed": "US",
       "availableLanguage": ["English", "Spanish"]
@@ -57,11 +60,11 @@
       "availableLanguage": ["English", "Spanish"]
     }
   ],
-  "foundingDate": "{{FOUNDING_YEAR}}",
-  "numberOfEmployees": {
-    "@type": "QuantitativeValue",
-    "minValue": 10,
-    "maxValue": 50
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
   },
   "slogan": "Your Partner in Warehouse Storage Solutions",
   "knowsAbout": [

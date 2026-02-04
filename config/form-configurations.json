@@ -1,5 +1,128 @@
 {
   "forms": {
+    "lp_quote": {
+      "name": "Landing Page Quote Form",
+      "description": "Streamlined lead capture form for landing pages",
+      "redirect_url": "/thank-you/quote",
+      "tags": ["quote_request", "lead", "landing_page"],
+      "pipeline": "New Leads",
+      "stage": "New Lead",
+      "visible_fields": [
+        {
+          "name": "name",
+          "label": "Your Name",
+          "type": "text",
+          "required": true,
+          "ghl_field": "contact.name",
+          "placeholder": "John Smith"
+        },
+        {
+          "name": "phone",
+          "label": "Phone",
+          "type": "tel",
+          "required": true,
+          "ghl_field": "contact.phone",
+          "placeholder": "(555) 123-4567"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "ghl_field": "contact.email",
+          "placeholder": "john@company.com"
+        },
+        {
+          "name": "service_interest",
+          "label": "What do you need?",
+          "type": "select",
+          "required": true,
+          "ghl_field": "contact.service_interest",
+          "options": [
+            {"value": "", "label": "Select..."},
+            {"value": "pallet_racking", "label": "Pallet Racking (New)"},
+            {"value": "used_rack", "label": "Used Pallet Rack"},
+            {"value": "warehouse_design", "label": "Warehouse Design & Layout"},
+            {"value": "shelving", "label": "Shelving Systems"},
+            {"value": "installation", "label": "Installation / Teardown"},
+            {"value": "relocation", "label": "Warehouse Relocation"},
+            {"value": "permitting", "label": "Permitting & Engineering"},
+            {"value": "safety_inspection", "label": "Rack Safety Inspection"},
+            {"value": "garage_storage", "label": "Garage Storage"},
+            {"value": "other", "label": "Other / General Inquiry"}
+          ]
+        }
+      ],
+      "step2_fields": [
+        {
+          "name": "company",
+          "label": "Company Name",
+          "type": "text",
+          "required": false,
+          "ghl_field": "contact.company_name"
+        },
+        {
+          "name": "warehouse_size",
+          "label": "Warehouse Size",
+          "type": "select",
+          "required": false,
+          "ghl_field": "contact.warehouse_size",
+          "options": [
+            {"value": "", "label": "Select size..."},
+            {"value": "under_5000", "label": "Under 5,000 sq ft"},
+            {"value": "5000_10000", "label": "5,000 - 10,000 sq ft"},
+            {"value": "10000_25000", "label": "10,000 - 25,000 sq ft"},
+            {"value": "25000_50000", "label": "25,000 - 50,000 sq ft"},
+            {"value": "50000_100000", "label": "50,000 - 100,000 sq ft"},
+            {"value": "over_100000", "label": "Over 100,000 sq ft"}
+          ]
+        },
+        {
+          "name": "timeline",
+          "label": "Project Timeline",
+          "type": "select",
+          "required": false,
+          "ghl_field": "contact.timeline",
+          "options": [
+            {"value": "", "label": "Select timeline..."},
+            {"value": "asap", "label": "ASAP / Urgent"},
+            {"value": "1_month", "label": "Within 1 month"},
+            {"value": "1_3_months", "label": "1-3 months"},
+            {"value": "3_6_months", "label": "3-6 months"},
+            {"value": "planning", "label": "Just planning / researching"}
+          ]
+        },
+        {
+          "name": "zip_code",
+          "label": "Zip Code",
+          "type": "text",
+          "required": false,
+          "ghl_field": "contact.postal_code",
+          "placeholder": "32750"
+        },
+        {
+          "name": "message",
+          "label": "Project Details",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "Tell us about your project...",
+          "ghl_field": "contact.notes"
+        }
+      ],
+      "hidden_fields": [
+        {"name": "utm_source", "ghl_field": "contact.utm_source"},
+        {"name": "utm_medium", "ghl_field": "contact.utm_medium"},
+        {"name": "utm_campaign", "ghl_field": "contact.utm_campaign"},
+        {"name": "utm_content", "ghl_field": "contact.utm_content"},
+        {"name": "utm_term", "ghl_field": "contact.utm_term"},
+        {"name": "gclid", "ghl_field": "contact.gclid"},
+        {"name": "fbclid", "ghl_field": "contact.fbclid"},
+        {"name": "landing_page", "ghl_field": "contact.landing_page"},
+        {"name": "first_referrer", "ghl_field": "contact.first_referrer"},
+        {"name": "traffic_type", "ghl_field": "contact.traffic_type"},
+        {"name": "conversion_page", "ghl_field": "contact.conversion_page"}
+      ]
+    },
     "quote_request": {
       "name": "Quote Request Form",
       "description": "Primary lead capture form for quote requests",
@@ -59,6 +182,7 @@
             {"value": "relocation", "label": "Warehouse Relocation"},
             {"value": "permitting", "label": "Permitting & Engineering"},
             {"value": "safety_inspection", "label": "Rack Safety Inspection"},
+            {"value": "garage_storage", "label": "Garage Storage"},
             {"value": "other", "label": "Other / General Inquiry"}
           ]
         },
@@ -284,8 +408,8 @@
           "ghl_field": "contact.preferred_time",
           "options": [
             {"value": "", "label": "Select time..."},
-            {"value": "morning", "label": "Morning (8am-12pm CST)"},
-            {"value": "afternoon", "label": "Afternoon (12pm-5pm CST)"}
+            {"value": "morning", "label": "Morning (8am-12pm EST)"},
+            {"value": "afternoon", "label": "Afternoon (12pm-5pm EST)"}
           ]
         }
       ],
@@ -397,7 +521,22 @@
           "relocation",
           "permitting",
           "safety_inspection",
+          "garage_storage",
           "other"
+        ]
+      },
+      {
+        "name": "warehouse_size",
+        "label": "Warehouse Size",
+        "type": "dropdown",
+        "group": "Sales",
+        "options": [
+          "under_5000",
+          "5000_10000",
+          "10000_25000",
+          "25000_50000",
+          "50000_100000",
+          "over_100000"
         ]
       },
       {
@@ -460,14 +599,16 @@
       "installation",
       "relocation",
       "permitting",
-      "safety_inspection"
+      "safety_inspection",
+      "garage_storage"
     ],
     "engagement_tags": [
       "quote_request",
       "contact",
       "download",
       "consultation",
-      "phone_call"
+      "phone_call",
+      "landing_page"
     ],
     "status_tags": [
       "new_lead",
@@ -484,6 +625,16 @@
       "cold_storage",
       "retail",
       "other"
+    ],
+    "location_tags": [
+      "orlando",
+      "tampa",
+      "jacksonville",
+      "miami",
+      "atlanta",
+      "florida",
+      "georgia",
+      "southeast"
     ]
   }
 }
