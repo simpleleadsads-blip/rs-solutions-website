@@ -922,6 +922,11 @@ small {
   opacity: 0.4;
 }
 
+video.hero__background {
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .hero__content {
   position: relative;
   z-index: var(--z-base);
@@ -1889,7 +1894,9 @@ body {
      HERO SECTION
      ============================================ -->
 <section class="hero hero--accent">
-  <img src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Industrial warehouse with organized pallet racking systems" class="hero__background" loading="eager">
+  <video class="hero__background" autoplay muted loop playsinline poster="/images/hero-warehouse.jpg">
+    <source src="/rs-solutions-website/hero-video.mp4" type="video/mp4">
+  </video>
   <div class="container">
     <div class="hero__content">
       <h1 class="hero__title">Warehouse Storage Solutions That Work</h1>

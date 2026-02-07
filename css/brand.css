@@ -844,6 +844,11 @@ small {
   opacity: 0.4;
 }
 
+video.hero__background {
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .hero__content {
   position: relative;
   z-index: var(--z-base);
